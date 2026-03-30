@@ -16,6 +16,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  icons: {
+    icon: [
+      { url: "/images/fav-icon-512px.webp", sizes: "512x512", type: "image/webp" },
+    ],
+    apple: [
+      { url: "/images/fav-icon-512px.webp", sizes: "512x512", type: "image/webp" },
+    ],
+  },
   openGraph: {
     type: "website",
     locale: "es_ES",
