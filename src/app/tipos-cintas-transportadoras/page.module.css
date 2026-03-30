@@ -1,0 +1,135 @@
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-4);
+}
+
+/* Hero Section */
+.heroSection {
+  background-color: var(--surface-highest);
+  padding: var(--spacing-20) 0 4rem 0;
+  border-bottom: 2px solid var(--secondary);
+}
+
+.heroContent {
+  max-width: 800px;
+}
+
+.heroSubheadline {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  margin-top: 1rem;
+  line-height: 1.6;
+}
+
+.heroFormContainer {
+  margin-top: 2rem;
+  max-width: 500px;
+}
+
+/* Content Layout */
+.contentSection {
+  background-color: var(--background);
+  padding: var(--spacing-20) 0;
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--spacing-12);
+  align-items: start; /* for sticky sidebar */
+}
+
+/* Blocks */
+.typesColumn {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-16);
+}
+
+.typeBlock h2 {
+  color: var(--secondary);
+  border-bottom: 2px solid var(--surface-high);
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.typeBlockContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.typeBlockContent p {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.attributeList {
+  background-color: var(--surface-low);
+  padding: 2rem;
+  border-radius: var(--radius-card);
+  list-style: none;
+  margin: 0;
+}
+
+.attributeList li {
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.attributeList li:last-child {
+  margin-bottom: 0;
+}
+
+.attributeList strong {
+  color: var(--primary);
+  margin-right: 0.5rem;
+}
+
+/* Sidebar */
+.sidebarColumn {
+  position: sticky;
+  top: 120px; /* Account for header */
+}
+
+.consultBox {
+  background-color: var(--surface-lowest);
+  padding: 3rem 2rem;
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-ambient);
+  border-top: 4px solid var(--primary);
+}
+
+.finalSection {
+  background-color: var(--surface-low);
+  padding: var(--spacing-20) 0;
+  border-top: 1px solid var(--border);
+}
+
+.finalFormContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: var(--surface-highest);
+  padding: 4rem 2rem;
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-ambient);
+  text-align: center;
+  border-top: 4px solid var(--primary);
+}
+
+@media (max-width: 992px) {
+  .mainGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .sidebarColumn {
+    position: static;
+  }
+}

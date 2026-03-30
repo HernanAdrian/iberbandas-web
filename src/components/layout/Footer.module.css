@@ -1,0 +1,125 @@
+.footer {
+  background-color: var(--secondary);
+  color: var(--secondary-foreground);
+  padding-top: var(--spacing-24);
+  margin-top: auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-4);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-20);
+  padding-bottom: var(--spacing-24);
+}
+
+.ctaSection {
+  background-color: var(--surface-low);
+  color: var(--text-primary);
+  padding: var(--spacing-20) 2rem ;
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-ambient);
+}
+
+.ctaTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.ctaSubtitle {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.footerForm {
+  margin-top: 1.5rem;
+}
+
+.corporateSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.corporateDetails {
+  margin-bottom: 3rem;
+}
+
+.footerLogo {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 0.75rem;
+}
+
+.footerLogoIber {
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+}
+
+.footerLogoBandas {
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: var(--primary);
+}
+
+.footerTagline {
+  color: #a0aec0;
+  font-size: 0.875rem;
+  max-width: 280px;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+.footerNif {
+  color: #718096;
+  font-size: 0.8rem;
+}
+
+.corpLinks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.linkColumn h4 {
+  color: var(--background);
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.linkColumn a {
+  display: block;
+  color: #a0aec0;
+  margin-bottom: 0.75rem;
+  font-size: 0.875rem;
+  transition: color 0.15s ease;
+}
+
+.linkColumn a:hover {
+  color: var(--primary);
+}
+
+.bottomBar {
+  background-color: var(--tertiary);
+  padding: 1.5rem var(--spacing-4);
+  text-align: center;
+  color: #718096;
+  font-size: 0.75rem;
+}
+
+@media (max-width: 992px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  /* Removed unused form row breakpoint */
+}

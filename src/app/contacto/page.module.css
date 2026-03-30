@@ -1,0 +1,67 @@
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-4);
+}
+
+/* Header Section */
+.headerSection {
+  background-color: var(--surface-highest);
+  padding: var(--spacing-16) 0 3rem 0;
+  border-bottom: 2px solid var(--surface-high);
+}
+
+.headerContent {
+  max-width: 600px;
+}
+
+/* Main Content */
+.mainSection {
+  background-color: var(--background);
+  padding: var(--spacing-20) 0;
+}
+
+/* Form Layout */
+.formContainer {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Guarantees */
+.guaranteeSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 4rem auto 0;
+}
+
+.guaranteeCard {
+  background-color: var(--surface-low);
+  padding: 2rem;
+  border-radius: var(--radius-card);
+  text-align: center;
+  border-top: 3px solid var(--primary);
+  box-shadow: var(--shadow-sm);
+}
+
+.guaranteeIcon {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.guaranteeCard p {
+  color: var(--text-secondary);
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .guaranteeSection {
+    grid-template-columns: 1fr;
+  }
+}

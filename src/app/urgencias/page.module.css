@@ -1,0 +1,209 @@
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-4);
+}
+
+/* Hero Section */
+.heroSection {
+  background-color: var(--primary); /* High Vis Amber/Orange */
+  color: var(--primary-foreground);
+  padding: var(--spacing-24) 0 5rem 0;
+  border-bottom: 4px solid var(--secondary);
+}
+
+.heroContent {
+  max-width: 800px;
+}
+
+.alertBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.heroSubheadline {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.heroActions {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.heroFormContainer {
+  margin-top: 2rem;
+  max-width: 500px;
+}
+
+/* Guarantee Section */
+.guaranteeSection {
+  background-color: var(--background);
+  padding: var(--spacing-20) 0;
+}
+
+.guaranteeContent {
+  max-width: 800px;
+  padding: 2rem;
+  border-left: 4px solid var(--primary);
+  background-color: var(--surface-lowest);
+  box-shadow: var(--shadow-ambient);
+  margin-top: -3rem; /* Overlap into hero */
+  position: relative;
+  z-index: 10;
+  border-radius: var(--radius-card);
+}
+
+.guaranteeContent p {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* Mid-page Form */
+.midFormSection {
+  background-color: var(--surface-low);
+  padding: 4rem 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.midFormWrapper {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Action Section */
+.actionSection {
+  background-color: var(--surface-low);
+  padding: var(--spacing-24) 0;
+}
+
+.actionGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-4);
+}
+
+.actionStep {
+  background-color: var(--surface-lowest);
+  padding: 3rem 2rem;
+  border-radius: var(--radius-card);
+  text-align: center;
+  position: relative;
+  box-shadow: var(--shadow-ambient);
+}
+
+.stepNumber {
+  position: absolute;
+  top: -1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--secondary);
+  color: var(--background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 50%;
+  border: 4px solid var(--surface-low);
+}
+
+.stepIcon {
+  color: var(--primary);
+  margin: 1.5rem auto;
+}
+
+.actionStep h3 {
+  color: var(--secondary);
+  margin-bottom: 0.5rem;
+}
+
+.actionStep p {
+  color: var(--text-secondary);
+}
+
+/* Secondary CTA */
+.secondaryCtaSection {
+  background-color: var(--background);
+  padding: var(--spacing-24) 0;
+}
+
+.secondaryBox {
+  background-color: var(--surface-highest);
+  border-radius: var(--radius-card);
+  padding: 4rem 2rem;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.secondaryBox p {
+  color: var(--text-secondary);
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+}
+
+.finalFormContainer {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Local Coverage */
+.localCoverageSection {
+  background-color: var(--background);
+  padding: var(--spacing-20) 0;
+}
+
+.cityLinksGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-3);
+  margin-top: 2rem;
+}
+
+.cityLink {
+  display: block;
+  padding: 1.25rem 1.5rem;
+  border: 2px solid var(--alert, var(--primary));
+  border-radius: 8px;
+  background: var(--surface-lowest);
+  text-align: center;
+  font-weight: 700;
+  color: var(--alert, var(--primary));
+  text-decoration: none;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.cityLink:hover {
+  background-color: var(--alert, var(--primary));
+  color: var(--primary-foreground, #fff);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .heroContent h1 {
+    font-size: 2.5rem;
+  }
+}

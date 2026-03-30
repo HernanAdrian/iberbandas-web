@@ -1,0 +1,383 @@
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-4);
+}
+
+/* ════════════════ HERO ════════════════ */
+.heroSection {
+  background-color: var(--surface-highest);
+  padding: var(--spacing-20) 0 4rem 0;
+  border-bottom: 2px solid var(--secondary);
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: var(--spacing-12);
+  align-items: start;
+}
+
+.heroText {
+  max-width: 650px;
+}
+
+.urgencyBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: rgba(var(--primary-rgb, 255, 90, 0), 0.1);
+  color: var(--primary);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: 1px solid var(--primary);
+}
+
+.highlight {
+  color: var(--primary);
+}
+
+.heroSubheadline {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin-top: 1.25rem;
+  line-height: 1.7;
+}
+
+.heroBenefits {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0 0;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.heroBenefits li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.heroBenefits li svg {
+  color: var(--primary);
+}
+
+.heroFormContainer {
+  background-color: var(--surface-low);
+  padding: 2rem;
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-ambient);
+  border-top: 4px solid var(--primary);
+}
+
+/* ════════════════ PROBLEM SECTION ════════════════ */
+.problemSection {
+  background-color: var(--background);
+  padding: var(--spacing-24) 0;
+}
+
+.sectionIntro {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  line-height: 1.7;
+}
+
+.problemGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-4);
+}
+
+.problemCard {
+  background-color: var(--surface-low);
+  padding: 2rem;
+  border-radius: var(--radius-card);
+  border-left: 4px solid var(--primary);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.problemCard:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-ambient);
+}
+
+.problemIcon {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.problemCard h3 {
+  color: var(--secondary);
+  margin-bottom: 0.5rem;
+}
+
+.problemCard p {
+  color: var(--text-secondary);
+}
+
+/* ════════════════ SERVICE SECTION ════════════════ */
+.serviceSection {
+  background-color: var(--surface-low);
+  padding: var(--spacing-24) 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.serviceGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-4);
+}
+
+.serviceCard {
+  background-color: var(--surface-highest);
+  padding: 2rem;
+  border-radius: var(--radius-card);
+  display: flex;
+  gap: 1.25rem;
+  transition: background-color 0.2s;
+}
+
+.serviceCard:hover {
+  background-color: var(--background);
+}
+
+.serviceIcon {
+  color: var(--primary);
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+}
+
+.serviceCard h3 {
+  margin-bottom: 0.25rem;
+  color: var(--secondary);
+}
+
+.serviceCard p {
+  color: var(--text-secondary);
+}
+
+/* ════════════════ MID-PAGE FORM ════════════════ */
+.midFormSection {
+  background-color: var(--surface-highest);
+  padding: 4rem 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.midFormWrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: var(--surface-low);
+  padding: 2.5rem 2rem;
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-ambient);
+  border-top: 4px solid var(--primary);
+}
+
+/* ════════════════ TRUST SECTION ════════════════ */
+.trustSection {
+  background-color: var(--background);
+  padding: var(--spacing-24) 0;
+}
+
+.trustGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-4);
+  margin-top: 2rem;
+}
+
+.trustCard {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  background-color: var(--surface-low);
+  border-radius: var(--radius-card);
+}
+
+.trustIcon {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.trustCard h3 {
+  color: var(--secondary);
+  margin-bottom: 0.5rem;
+}
+
+.trustCard p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+/* ════════════════ PROCESS SECTION ════════════════ */
+.processSection {
+  background-color: var(--surface-low);
+  padding: var(--spacing-20) 0;
+  border-top: 1px solid var(--border);
+}
+
+.processGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-8);
+}
+
+.processStep {
+  text-align: center;
+  padding: 2rem;
+}
+
+.stepNumber {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 0 auto 1.5rem auto;
+}
+
+.processStep h3 {
+  color: var(--secondary);
+  margin-bottom: 0.75rem;
+}
+
+.processStep p {
+  color: var(--text-secondary);
+}
+
+/* ════════════════ FINAL CTA ════════════════ */
+.finalCtaSection {
+  background-color: var(--background);
+  padding: var(--spacing-24) 0;
+}
+
+.finalCtaBox {
+  background-color: var(--primary);
+  border-radius: var(--radius-card);
+  padding: 4rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: var(--shadow-ambient);
+  gap: 3rem;
+}
+
+.finalCtaText {
+  max-width: 550px;
+}
+
+.finalFormContainer {
+  width: 100%;
+  max-width: 450px;
+  background-color: var(--surface-highest);
+  padding: 2rem;
+  border-radius: var(--radius-card);
+}
+
+/* ════════════════ LOCAL COVERAGE ════════════════ */
+.localCoverageSection {
+  background-color: var(--surface-low);
+  padding: var(--spacing-20) 0;
+  border-top: 1px solid var(--border);
+}
+
+.cityLinksGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--spacing-3);
+}
+
+.cityLink {
+  display: block;
+  padding: 1rem 1.25rem;
+  background-color: var(--surface-highest);
+  border-radius: var(--radius-card);
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: background-color 0.2s, transform 0.2s;
+  border-left: 3px solid var(--primary);
+}
+
+.cityLink:hover {
+  background-color: var(--background);
+  transform: translateY(-1px);
+}
+
+/* ════════════════ RESPONSIVE ════════════════ */
+@media (max-width: 992px) {
+  .heroGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .problemGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .serviceGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .trustGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .processGrid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-4);
+  }
+
+  .finalCtaBox {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 2rem;
+  }
+
+  .cityLinksGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .problemGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .trustGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .heroBenefits {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .cityLinksGrid {
+    grid-template-columns: 1fr;
+  }
+}
+

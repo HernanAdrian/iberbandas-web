@@ -1,0 +1,589 @@
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-4);
+}
+
+.sectionTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Hero Section — dark dramatic, 2-column */
+.heroSection {
+  background-color: var(--tertiary);
+  background-image: linear-gradient(135deg, var(--tertiary) 0%, #1B365D 100%);
+  padding: 4.5rem 0 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.heroSection::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 60% at 60% 50%, rgba(255, 107, 0, 0.07) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: 1fr 440px;
+  align-items: center;
+  gap: 3.5rem;
+}
+
+.heroText {
+  position: relative;
+  z-index: 1;
+}
+
+.heroBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.875rem;
+  background-color: rgba(255, 107, 0, 0.12);
+  border: 1px solid rgba(255, 107, 0, 0.3);
+  border-radius: 2rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1.5rem;
+}
+
+.heroBadgeDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--primary);
+  animation: pulse 2s infinite;
+  flex-shrink: 0;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--primary-foreground);
+  margin-bottom: 1.25rem;
+}
+
+.heroHighlight {
+  color: var(--primary);
+}
+
+.heroSubheadline {
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.65);
+  margin-bottom: 2rem;
+  max-width: 500px;
+  line-height: 1.65;
+}
+
+.heroStats {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.heroStat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.heroStat strong {
+  font-size: 1.375rem;
+  font-weight: 800;
+  color: var(--primary-foreground);
+  letter-spacing: -0.02em;
+}
+
+.heroStat span {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.heroStatDivider {
+  width: 1px;
+  height: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  flex-shrink: 0;
+}
+
+/* Hero Form Card — elevated, high-contrast */
+.heroFormCard {
+  background-color: var(--surface-lowest);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.4), 0 4px 16px rgba(0, 0, 0, 0.2);
+  border-top: 4px solid var(--primary);
+  position: relative;
+  z-index: 1;
+}
+
+.heroFormCardHeader {
+  margin-bottom: 1.25rem;
+}
+
+.heroFormCardLabel {
+  display: block;
+  font-size: 1.125rem;
+  font-weight: 800;
+  color: var(--secondary);
+  letter-spacing: -0.01em;
+  margin-bottom: 0.25rem;
+}
+
+.heroFormCardSub {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin-bottom: 0;
+}
+
+
+/* Services Grid */
+.servicesSection {
+  background-color: var(--surface-low);
+  padding: 3.5rem 0;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.serviceCard {
+  background-color: var(--surface-lowest);
+  padding: 1.75rem 1.5rem;
+  border-radius: var(--radius-card);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 1.5px solid transparent;
+}
+
+.serviceCard:hover {
+  border-color: rgba(27, 54, 93, 0.12);
+  box-shadow: 0 8px 24px rgba(27, 54, 93, 0.1);
+  transform: translateY(-3px);
+}
+
+.serviceCard .cardHeader svg {
+  color: var(--secondary);
+  flex-shrink: 0;
+}
+
+.serviceCard h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--secondary);
+  margin-bottom: 0;
+}
+
+.serviceCard p {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  flex: 1;
+  line-height: 1.5;
+}
+
+.cardArrow {
+  color: var(--text-muted);
+  margin-top: 0.75rem;
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: all 0.15s ease;
+}
+
+.serviceCard:hover .cardArrow,
+.serviceCardAlert:hover .cardArrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Alert card — emergency service */
+.serviceCardAlert {
+  background: linear-gradient(135deg, var(--primary) 0%, #e65c00 100%);
+  padding: 1.75rem 1.5rem;
+  border-radius: var(--radius-card);
+  box-shadow: 0 8px 24px rgba(255, 107, 0, 0.3);
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  color: var(--primary-foreground);
+  position: relative;
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+}
+
+.serviceCardAlert:hover {
+  box-shadow: 0 12px 32px rgba(255, 107, 0, 0.45);
+  transform: translateY(-3px);
+}
+
+.serviceCardAlert .cardHeader svg {
+  color: var(--primary-foreground);
+  flex-shrink: 0;
+}
+
+.serviceCardAlert h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary-foreground);
+  margin-bottom: 0;
+}
+
+.serviceCardAlert p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.875rem;
+  flex: 1;
+  line-height: 1.5;
+}
+
+.serviceCardAlert .cardArrow {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Trust Strip — compact horizontal */
+.trustStrip {
+  background-color: var(--surface-lowest);
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--surface-high);
+  border-bottom: 1px solid var(--surface-high);
+}
+
+.trustRow {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
+}
+
+.trustItem {
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.trustItem strong {
+  color: var(--secondary);
+  font-weight: 700;
+}
+
+.trustItem::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--primary);
+  flex-shrink: 0;
+}
+
+/* Mid-page Form — dark bg, 2-column layout */
+.midFormSection {
+  background-color: var(--secondary);
+  background-image: linear-gradient(135deg, var(--secondary) 0%, var(--tertiary) 100%);
+  padding: 5rem 0;
+}
+
+.midFormLayout {
+  display: grid;
+  grid-template-columns: 1fr 480px;
+  align-items: center;
+  gap: 4rem;
+}
+
+.midFormText {
+  color: var(--primary-foreground);
+}
+
+.midFormTitle {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--primary-foreground);
+  letter-spacing: -0.02em;
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+}
+
+.midFormSubtitle {
+  font-size: 1.0625rem;
+  color: rgba(255, 255, 255, 0.65);
+  margin-bottom: 1.75rem;
+  line-height: 1.6;
+}
+
+.midFormBullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.midFormBullets li {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  font-size: 0.9375rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+}
+
+.midFormBullets li svg {
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+.midFormWrapper {
+  width: 100%;
+}
+
+/* Final CTA — Form Layout */
+.finalCtaSection {
+  background-color: var(--tertiary);
+  background-image: linear-gradient(135deg, #0a1a28 0%, var(--secondary) 100%);
+  padding: 5rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.finalCtaSection::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 107, 0, 0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.finalCtaContent {
+  display: grid;
+  grid-template-columns: 1fr 480px;
+  align-items: center;
+  gap: 4rem;
+}
+
+.finalCtaText {
+  color: var(--primary-foreground);
+}
+
+.finalCtaBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.875rem;
+  background-color: rgba(255, 107, 0, 0.15);
+  border: 1px solid rgba(255, 107, 0, 0.3);
+  border-radius: 2rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1.25rem;
+}
+
+.finalCtaText h2 {
+  color: var(--primary-foreground);
+  font-size: 2.25rem;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+}
+
+.finalCtaText p {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+.finalFormContainer {
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .heroGrid {
+    grid-template-columns: 1fr 400px;
+    gap: 2.5rem;
+  }
+
+  .midFormLayout {
+    grid-template-columns: 1fr 420px;
+    gap: 3rem;
+  }
+
+  .finalCtaContent {
+    grid-template-columns: 1fr 420px;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .heroGrid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .heroText {
+    text-align: center;
+  }
+
+  .heroBadge {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .heroSubheadline {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .heroStats {
+    justify-content: center;
+  }
+
+  .heroFormCard {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .servicesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .midFormLayout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .midFormBullets {
+    align-items: center;
+  }
+
+  .finalCtaContent {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    text-align: center;
+  }
+
+  .finalCtaBadge {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    padding: 3rem 0 3rem;
+  }
+
+  .heroTitle {
+    font-size: 2.25rem;
+  }
+
+  .trustRow {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroTitle {
+    font-size: 1.875rem;
+  }
+
+  .servicesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .cityGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ════════════════ LOCAL COVERAGE ════════════════ */
+.localCoverageSection {
+  background-color: var(--surface-highest);
+  padding: 2.5rem 0;
+  border-top: 1px solid var(--surface-high);
+}
+
+.cityGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0.75rem;
+}
+
+.cityCard {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 1.25rem;
+  background-color: var(--surface-low);
+  border-radius: var(--radius-card);
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.cityCard:hover {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.cityCard svg {
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+.cityCard:hover svg {
+  color: var(--primary-foreground);
+}
+
+@media (max-width: 768px) {
+  .cityGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
