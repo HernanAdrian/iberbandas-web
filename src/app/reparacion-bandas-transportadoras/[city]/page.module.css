@@ -668,4 +668,10 @@
   .statDivider {
     display: none;
   }
+
+  .problemGrid,
+  .serviceGrid,
+  .trustGrid {
+    grid-template-columns: 1fr;
+  }
 }

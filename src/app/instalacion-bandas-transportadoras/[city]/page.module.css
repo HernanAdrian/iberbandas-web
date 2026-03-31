@@ -459,6 +459,11 @@
     grid-template-columns: 1fr;
   }
 
+  .localContextGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
   .problemGrid,
   .serviceGrid,
   .trustGrid,
@@ -470,6 +475,14 @@
     flex-direction: column;
     text-align: center;
     padding: 3rem 2rem;
+  }
+
+  .finalText {
+    max-width: 100%;
+  }
+
+  .finalFormWrap {
+    max-width: 100%;
   }
 }
 
