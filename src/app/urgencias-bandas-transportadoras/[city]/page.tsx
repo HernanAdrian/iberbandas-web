@@ -33,13 +33,13 @@ export default async function LocalUrgentPage({ params }: Props) {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://www.iberbandas.es' },
-      { '@type': 'ListItem', position: 2, name: 'Urgencias 24h', item: 'https://www.iberbandas.es/urgencias' },
+      { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://www.iberband.es' },
+      { '@type': 'ListItem', position: 2, name: 'Urgencias 24h', item: 'https://www.iberband.es/urgencias' },
       {
         '@type': 'ListItem',
         position: 3,
         name: `Urgencias en ${city.displayName}`,
-        item: `https://www.iberbandas.es/urgencias-bandas-transportadoras/${citySlug}`,
+        item: `https://www.iberband.es/urgencias-bandas-transportadoras/${citySlug}`,
       },
     ],
   };
@@ -52,7 +52,7 @@ export default async function LocalUrgentPage({ params }: Props) {
     provider: {
       '@type': 'LocalBusiness',
       name: `IberBandas ${city.displayName}`,
-      url: `https://www.iberbandas.es/urgencias-bandas-transportadoras/${citySlug}`,
+      url: `https://www.iberband.es/urgencias-bandas-transportadoras/${citySlug}`,
       areaServed: { '@type': 'City', name: city.displayName },
     },
     serviceType: 'Reparación Urgente de Bandas Transportadoras',

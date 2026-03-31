@@ -15,8 +15,8 @@ function BreadcrumbJsonLd() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.iberbandas.es" },
-      { "@type": "ListItem", "position": 2, "name": "Urgencias 24h", "item": "https://www.iberbandas.es/urgencias" },
+      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.iberband.es" },
+      { "@type": "ListItem", "position": 2, "name": "Urgencias 24h", "item": "https://www.iberband.es/urgencias" },
     ],
   };
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />;
@@ -31,7 +31,7 @@ function ServiceJsonLd() {
     "provider": {
       "@type": "Organization",
       "name": "IberBandas",
-      "url": "https://www.iberbandas.es",
+      "url": "https://www.iberband.es",
     },
     "areaServed": { "@type": "Country", "name": "España" },
     "serviceType": "Reparación Urgente de Bandas Transportadoras",

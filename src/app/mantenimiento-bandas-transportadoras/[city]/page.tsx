@@ -33,13 +33,13 @@ export default async function LocalMaintenancePage({ params }: { params: Promise
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://www.iberbandas.es' },
-      { '@type': 'ListItem', position: 2, name: 'Mantenimiento', item: 'https://www.iberbandas.es/mantenimiento' },
+      { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://www.iberband.es' },
+      { '@type': 'ListItem', position: 2, name: 'Mantenimiento', item: 'https://www.iberband.es/mantenimiento' },
       {
         '@type': 'ListItem',
         position: 3,
         name: `Mantenimiento en ${city.displayName}`,
-        item: `https://www.iberbandas.es/mantenimiento-bandas-transportadoras/${citySlug}`,
+        item: `https://www.iberband.es/mantenimiento-bandas-transportadoras/${citySlug}`,
       },
     ],
   };
@@ -52,7 +52,7 @@ export default async function LocalMaintenancePage({ params }: { params: Promise
     provider: {
       '@type': 'LocalBusiness',
       name: `IberBandas ${city.displayName}`,
-      url: `https://www.iberbandas.es/mantenimiento-bandas-transportadoras/${citySlug}`,
+      url: `https://www.iberband.es/mantenimiento-bandas-transportadoras/${citySlug}`,
       areaServed: { '@type': 'City', name: city.displayName },
     },
     serviceType: 'Mantenimiento de Bandas Transportadoras',

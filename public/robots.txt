@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /success/
 
-Sitemap: https://www.iberbandas.es/sitemap.xml
+Sitemap: https://www.iberband.es/sitemap.xml

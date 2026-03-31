@@ -36,9 +36,9 @@ export default async function LocalRepairPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.iberbandas.es" },
-      { "@type": "ListItem", "position": 2, "name": "Reparación de Bandas", "item": "https://www.iberbandas.es/reparacion" },
-      { "@type": "ListItem", "position": 3, "name": `Reparación en ${city.displayName}`, "item": `https://www.iberbandas.es/reparacion-bandas-transportadoras/${citySlug}` },
+      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.iberband.es" },
+      { "@type": "ListItem", "position": 2, "name": "Reparación de Bandas", "item": "https://www.iberband.es/reparacion" },
+      { "@type": "ListItem", "position": 3, "name": `Reparación en ${city.displayName}`, "item": `https://www.iberband.es/reparacion-bandas-transportadoras/${citySlug}` },
     ],
   };
 
@@ -50,7 +50,7 @@ export default async function LocalRepairPage({ params }: Props) {
     "provider": {
       "@type": "LocalBusiness",
       "name": "IberBandas",
-      "url": `https://www.iberbandas.es/reparacion-bandas-transportadoras/${citySlug}`,
+      "url": `https://www.iberband.es/reparacion-bandas-transportadoras/${citySlug}`,
       "areaServed": { "@type": "City", "name": city.displayName },
     },
     "serviceType": "Reparación de Bandas Transportadoras",

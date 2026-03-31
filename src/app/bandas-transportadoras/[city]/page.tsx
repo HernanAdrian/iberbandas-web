@@ -50,19 +50,19 @@ export default async function CityHubPage({ params }: { params: Promise<{ city: 
         '@type': 'ListItem',
         position: 1,
         name: 'Inicio',
-        item: 'https://www.iberbandas.es',
+        item: 'https://www.iberband.es',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Ciudades',
-        item: 'https://www.iberbandas.es/bandas-transportadoras',
+        item: 'https://www.iberband.es/bandas-transportadoras',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: city.displayName,
-        item: `https://www.iberbandas.es/bandas-transportadoras/${citySlug}`,
+        item: `https://www.iberband.es/bandas-transportadoras/${citySlug}`,
       },
     ],
   };
@@ -72,7 +72,7 @@ export default async function CityHubPage({ params }: { params: Promise<{ city: 
     '@type': 'LocalBusiness',
     name: 'IberBandas',
     description: `Servicio de reparación, mantenimiento e instalación de bandas transportadoras en ${city.displayName}. Cobertura en ${city.industrialZone}. Servicio urgente 24/7.`,
-    url: `https://www.iberbandas.es/bandas-transportadoras/${citySlug}`,
+    url: `https://www.iberband.es/bandas-transportadoras/${citySlug}`,
     areaServed: {
       '@type': 'City',
       name: city.displayName,

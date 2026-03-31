@@ -49,19 +49,19 @@ export default async function LocalInstallationPage({ params }: Props) {
         '@type': 'ListItem',
         position: 1,
         name: 'Inicio',
-        item: 'https://www.iberbandas.es',
+        item: 'https://www.iberband.es',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Instalación de Bandas Transportadoras',
-        item: 'https://www.iberbandas.es/instalacion',
+        item: 'https://www.iberband.es/instalacion',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: `Instalación en ${city.displayName}`,
-        item: `https://www.iberbandas.es/instalacion-bandas-transportadoras/${citySlug}`,
+        item: `https://www.iberband.es/instalacion-bandas-transportadoras/${citySlug}`,
       },
     ],
   };
@@ -74,12 +74,12 @@ export default async function LocalInstallationPage({ params }: Props) {
     provider: {
       '@type': 'LocalBusiness',
       name: `IberBandas ${city.displayName}`,
-      url: `https://www.iberbandas.es/instalacion-bandas-transportadoras/${citySlug}`,
+      url: `https://www.iberband.es/instalacion-bandas-transportadoras/${citySlug}`,
       areaServed: { '@type': 'City', name: city.displayName },
     },
     serviceType: 'Instalación de Bandas Transportadoras',
     areaServed: { '@type': 'City', name: city.displayName },
-    url: `https://www.iberbandas.es/instalacion-bandas-transportadoras/${citySlug}`,
+    url: `https://www.iberband.es/instalacion-bandas-transportadoras/${citySlug}`,
   };
 
   return (

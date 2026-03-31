@@ -20,7 +20,7 @@ function WebPageJsonLd() {
     "@type": "WebPage",
     "name": "IberBandas — Cintas Transportadoras y Bandas Transportadoras Industriales",
     "description": "Especialistas en cintas transportadoras y bandas transportadoras industriales. Reparación, mantenimiento y sustitución en toda España.",
-    "url": "https://www.iberbandas.es",
+    "url": "https://www.iberband.es",
     "mainEntity": {
       "@type": "LocalBusiness",
       "name": "IberBandas",

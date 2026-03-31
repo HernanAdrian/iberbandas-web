@@ -14,8 +14,8 @@ function BreadcrumbJsonLd() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.iberbandas.es" },
-      { "@type": "ListItem", "position": 2, "name": "Contacto", "item": "https://www.iberbandas.es/contacto" },
+      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.iberband.es" },
+      { "@type": "ListItem", "position": 2, "name": "Contacto", "item": "https://www.iberband.es/contacto" },
     ],
   };
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />;

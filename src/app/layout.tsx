@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     template: "%s | IberBandas",
   },
   description: "Reparación urgente 24/7, mantenimiento preventivo y sustitución de bandas transportadoras industriales en toda España. +25 años de experiencia. Servicio técnico 24/7.",
-  metadataBase: new URL("https://www.iberbandas.es"),
+  metadataBase: new URL("https://www.iberband.es"),
   alternates: {
     canonical: "/",
   },
@@ -46,9 +46,9 @@ function OrganizationJsonLd() {
     "@type": "LocalBusiness",
     "name": "IberBandas",
     "description": "Empresa especializada en reparación, mantenimiento y sustitución de bandas transportadoras industriales en España.",
-    "url": "https://www.iberbandas.es",
-    "logo": "https://www.iberbandas.es/images/LOGOTIPO.webp",
-    "image": "https://www.iberbandas.es/images/LOGOTIPO.webp",
+    "url": "https://www.iberband.es",
+    "logo": "https://www.iberband.es/images/LOGOTIPO.webp",
+    "image": "https://www.iberband.es/images/LOGOTIPO.webp",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Polígono Industrial Principal, Nave 4",
@@ -61,7 +61,7 @@ function OrganizationJsonLd() {
       "latitude": "40.4168",
       "longitude": "-3.7038",
     },
-    "email": "industria@iberbandas.es",
+    "email": "industria@iberband.es",
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",

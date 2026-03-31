@@ -13,8 +13,8 @@ function BreadcrumbJsonLd() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.iberbandas.es" },
-      { "@type": "ListItem", "position": 2, "name": "Tipos de Bandas Transportadoras", "item": "https://www.iberbandas.es/tipos-cintas-transportadoras" },
+      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.iberband.es" },
+      { "@type": "ListItem", "position": 2, "name": "Tipos de Bandas Transportadoras", "item": "https://www.iberband.es/tipos-cintas-transportadoras" },
     ],
   };
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />;
