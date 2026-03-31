@@ -12,18 +12,43 @@
   <url><loc>https://www.iberbandas.es/contacto/</loc><lastmod>2026-03-31</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
 
   <!-- HUBs de ciudad -->
-  <url><loc>https://www.iberbandas.es/bandas-transportadoras/sevilla malaga granada cordoba almeria cadiz/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.iberbandas.es/bandas-transportadoras/sevilla/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.iberbandas.es/bandas-transportadoras/malaga/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.iberbandas.es/bandas-transportadoras/granada/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.iberbandas.es/bandas-transportadoras/cordoba/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.iberbandas.es/bandas-transportadoras/almeria/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.iberbandas.es/bandas-transportadoras/cadiz/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
 
   <!-- Reparación por ciudad -->
-  <url><loc>https://www.iberbandas.es/reparacion-bandas-transportadoras/sevilla malaga granada cordoba almeria cadiz/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.iberbandas.es/reparacion-bandas-transportadoras/sevilla/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.iberbandas.es/reparacion-bandas-transportadoras/malaga/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.iberbandas.es/reparacion-bandas-transportadoras/granada/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.iberbandas.es/reparacion-bandas-transportadoras/cordoba/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.iberbandas.es/reparacion-bandas-transportadoras/almeria/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.iberbandas.es/reparacion-bandas-transportadoras/cadiz/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- Mantenimiento por ciudad -->
-  <url><loc>https://www.iberbandas.es/mantenimiento-bandas-transportadoras/sevilla malaga granada cordoba almeria cadiz/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.iberbandas.es/mantenimiento-bandas-transportadoras/sevilla/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.iberbandas.es/mantenimiento-bandas-transportadoras/malaga/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.iberbandas.es/mantenimiento-bandas-transportadoras/granada/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.iberbandas.es/mantenimiento-bandas-transportadoras/cordoba/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.iberbandas.es/mantenimiento-bandas-transportadoras/almeria/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.iberbandas.es/mantenimiento-bandas-transportadoras/cadiz/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- Instalación por ciudad -->
-  <url><loc>https://www.iberbandas.es/instalacion-bandas-transportadoras/sevilla malaga granada cordoba almeria cadiz/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.iberbandas.es/instalacion-bandas-transportadoras/sevilla/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.iberbandas.es/instalacion-bandas-transportadoras/malaga/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.iberbandas.es/instalacion-bandas-transportadoras/granada/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.iberbandas.es/instalacion-bandas-transportadoras/cordoba/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.iberbandas.es/instalacion-bandas-transportadoras/almeria/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.iberbandas.es/instalacion-bandas-transportadoras/cadiz/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- Urgencias por ciudad -->
-  <url><loc>https://www.iberbandas.es/urgencias-bandas-transportadoras/sevilla malaga granada cordoba almeria cadiz/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.iberbandas.es/urgencias-bandas-transportadoras/sevilla/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.iberbandas.es/urgencias-bandas-transportadoras/malaga/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.iberbandas.es/urgencias-bandas-transportadoras/granada/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.iberbandas.es/urgencias-bandas-transportadoras/cordoba/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.iberbandas.es/urgencias-bandas-transportadoras/almeria/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.iberbandas.es/urgencias-bandas-transportadoras/cadiz/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
 </urlset>
