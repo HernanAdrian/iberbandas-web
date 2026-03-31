@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { LeadForm } from '@/components/forms/LeadForm';
+import Image from 'next/image';
 import { CheckCircle2, AlertTriangle, Wrench, Clock, ShieldCheck, Zap } from 'lucide-react';
 import styles from './page.module.css';
 
@@ -77,6 +78,23 @@ export default function RepairService() {
           </div>
         </div>
       </section>
+
+      {/* ═══════════════ VISUAL STRIP — PROBLEMAS ═══════════════ */}
+      <div className={styles.imageStrip}>
+        <Image
+          src="/images/PROBLEMAS.webp"
+          alt="Banda transportadora con desgaste y problemas visibles"
+          fill
+          loading="lazy"
+          style={{ objectFit: 'cover', objectPosition: 'center 60%' }}
+          sizes="100vw"
+        />
+        <div className={styles.imageStripOverlay}>
+          <div className={styles.container}>
+            <p className={styles.imageStripCaption}>¿Reconoce alguno de estos síntomas en su instalación?</p>
+          </div>
+        </div>
+      </div>
 
       {/* ═══════════════ PROBLEM SECTION ═══════════════ */}
       <section className={styles.problemSection}>
@@ -270,6 +288,23 @@ export default function RepairService() {
           </div>
         </div>
       </section>
+
+      {/* ═══════════════ RESULTADO — BANDA PERFECTA ═══════════════ */}
+      <div className={styles.resultStrip}>
+        <Image
+          src="/images/BANDA PERFECTA.webp"
+          alt="Banda transportadora reparada y funcionando a pleno rendimiento"
+          fill
+          loading="lazy"
+          style={{ objectFit: 'cover', objectPosition: 'center' }}
+          sizes="100vw"
+        />
+        <div className={styles.resultStripOverlay}>
+          <div className={styles.container}>
+            <p className={styles.resultStripCaption}>Así queda su línea tras la intervención. Garantía incluida.</p>
+          </div>
+        </div>
+      </div>
 
       {/* ═══════════════ FINAL CTA ═══════════════ */}
       <section className={styles.finalCtaSection}>

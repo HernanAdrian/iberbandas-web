@@ -263,6 +263,42 @@
   font-size: 0.9rem;
 }
 
+/* ════════════════ RESULT IMAGE ════════════════ */
+.resultImageSection {
+  position: relative;
+  height: 280px;
+  overflow: hidden;
+  background-color: var(--secondary);
+}
+
+.resultImageOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(10, 26, 40, 0.88) 0%,
+    rgba(10, 26, 40, 0.5) 55%,
+    transparent 100%
+  );
+  display: flex;
+  align-items: center;
+}
+
+.resultImageCaption {
+  color: #ffffff;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: 700;
+  max-width: 560px;
+  line-height: 1.4;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 640px) {
+  .resultImageSection {
+    height: 200px;
+  }
+}
+
 /* ════════════════ FINAL CTA — dark ════════════════ */
 .finalSection {
   background-color: var(--secondary);

@@ -1,6 +1,7 @@
 import { ANDALUCIA_CITY_SLUGS, getAndaluciaCity } from '@/lib/andalucia';
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { LeadForm } from '@/components/forms/LeadForm';
 import {
   MapPin,
@@ -291,6 +292,25 @@ export default async function CityHubPage({ params }: { params: Promise<{ city: 
             </div>
           </div>
         </section>
+
+        {/* ══════════════════════════════════════════
+            RESULT IMAGE
+        ══════════════════════════════════════════ */}
+        <div className={styles.resultImageSection} aria-hidden="true">
+          <Image
+            src="/images/BANDA PERFECTA.webp"
+            alt="Banda transportadora industrial en perfecto estado"
+            fill
+            loading="lazy"
+            style={{ objectFit: 'cover', objectPosition: 'center 40%' }}
+            sizes="100vw"
+          />
+          <div className={styles.resultImageOverlay}>
+            <div className={styles.container}>
+              <p className={styles.resultImageCaption}>Así trabajan las líneas que mantenemos. Continuas, alineadas, sin pérdidas de producción.</p>
+            </div>
+          </div>
+        </div>
 
         {/* ══════════════════════════════════════════
             FINAL CTA

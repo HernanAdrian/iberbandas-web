@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { LeadForm } from '@/components/forms/LeadForm';
+import Image from 'next/image';
 import { Layers, Zap, Hammer } from 'lucide-react';
 import styles from './page.module.css';
 
@@ -88,6 +89,23 @@ export default function ReplacementService() {
           </div>
         </div>
       </section>
+
+      {/* ═══════════════ INSTALACION IMAGE ═══════════════ */}
+      <div className={styles.instalacionImageSection}>
+        <Image
+          src="/images/INSTALACION.webp"
+          alt="Equipo técnico instalando banda transportadora industrial"
+          fill
+          loading="lazy"
+          style={{ objectFit: 'cover', objectPosition: 'center 40%' }}
+          sizes="100vw"
+        />
+        <div className={styles.instalacionOverlay}>
+          <div className={styles.container}>
+            <p className={styles.instalacionCaption}>Montaje profesional, calibración bajo carga real y garantía de 2 años.</p>
+          </div>
+        </div>
+      </div>
 
       {/* Execution Strategy */}
       <section className={styles.strategySection}>

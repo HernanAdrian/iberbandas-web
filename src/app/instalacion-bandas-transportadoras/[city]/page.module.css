@@ -453,6 +453,39 @@
   border-radius: var(--radius-card);
 }
 
+/* ════════════════ INSTALACION IMAGE SECTION ════════════════ */
+.instalacionImageSection {
+  width: 100%;
+  overflow: hidden;
+}
+
+.instalacionImageWrap {
+  position: relative;
+  height: 320px;
+  width: 100%;
+}
+
+.instalacionImageOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(27, 54, 93, 0.75) 0%,
+    transparent 60%
+  );
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 1.5rem;
+}
+
+.instalacionImageCaption {
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+}
+
 /* ════════════════ RESPONSIVE ════════════════ */
 @media (max-width: 992px) {
   .heroGrid {
@@ -490,5 +523,9 @@
   .heroBenefits {
     flex-direction: column;
     gap: 0.5rem;
+  }
+
+  .instalacionImageWrap {
+    height: 200px;
   }
 }

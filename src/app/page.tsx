@@ -1,7 +1,8 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { LeadForm } from '@/components/forms/LeadForm';
-import { Wrench, ShieldCheck, Truck, ClockAlert, ArrowRight, MapPin } from 'lucide-react';
+import { Wrench, ShieldCheck, Truck, ClockAlert, ArrowRight, MapPin, CheckCircle2 } from 'lucide-react';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
@@ -34,54 +35,64 @@ export default function Home() {
     <div className={styles.pageWrapper}>
       <WebPageJsonLd />
 
-      {/* Hero Section */}
+      {/* ═══════════════ HERO — HERO.webp background ═══════════════ */}
       <section className={styles.heroSection}>
-        <div className={styles.container}>
-          <div className={styles.heroGrid}>
-            <div className={styles.heroText}>
-              <div className={styles.heroBadge}>
-                <span className={styles.heroBadgeDot}></span>
-                Servicio de emergencia activo 24/7
-              </div>
-              <h1 className={styles.heroTitle}>
-                Reparación, Mantenimiento e Instalación de Bandas Transportadoras Industriales en Andalucía
-              </h1>
-              <p className={styles.heroSubheadline}>
-                Especialistas en cintas transportadoras y bandas transportadoras para la industria. Servicio técnico urgente en toda Andalucía.
-              </p>
-              <div className={styles.heroStats}>
-                <div className={styles.heroStat}>
-                  <strong>+500</strong>
-                  <span>intervenciones/año</span>
+        <Image
+          src="/images/HERO.webp"
+          alt=""
+          fill
+          priority
+          style={{ objectFit: 'cover', objectPosition: 'center 30%' }}
+          sizes="100vw"
+        />
+        <div className={styles.heroOverlay} />
+        <div className={styles.heroContentLayer}>
+          <div className={styles.container}>
+            <div className={styles.heroGrid}>
+              <div className={styles.heroText}>
+                <div className={styles.heroBadge}>
+                  <span className={styles.heroBadgeDot}></span>
+                  Servicio de emergencia activo 24/7
                 </div>
-                <div className={styles.heroStatDivider}></div>
-                <div className={styles.heroStat}>
-                  <strong>&lt;2h</strong>
-                  <span>respuesta</span>
-                </div>
-                <div className={styles.heroStatDivider}></div>
-                <div className={styles.heroStat}>
-                  <strong>24/7</strong>
-                  <span>disponibilidad</span>
+                <h1 className={styles.heroTitle}>
+                  Reparación, Mantenimiento e Instalación de Bandas Transportadoras Industriales en Andalucía
+                </h1>
+                <p className={styles.heroSubheadline}>
+                  Especialistas en cintas transportadoras y bandas transportadoras para la industria. Servicio técnico urgente en toda Andalucía.
+                </p>
+                <div className={styles.heroStats}>
+                  <div className={styles.heroStat}>
+                    <strong>+500</strong>
+                    <span>intervenciones/año</span>
+                  </div>
+                  <div className={styles.heroStatDivider}></div>
+                  <div className={styles.heroStat}>
+                    <strong>24/7</strong>
+                    <span>disponibilidad</span>
+                  </div>
+                  <div className={styles.heroStatDivider}></div>
+                  <div className={styles.heroStat}>
+                    <strong>+25 años</strong>
+                    <span>de experiencia</span>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className={styles.heroFormCard}>
-              <div className={styles.heroFormCardHeader}>
-                <span className={styles.heroFormCardLabel}>Solicita Presupuesto Ahora</span>
-                <p className={styles.heroFormCardSub}>Técnico disponible 24/7. Sin compromiso.</p>
+              <div className={styles.heroFormCard}>
+                <div className={styles.heroFormCardHeader}>
+                  <span className={styles.heroFormCardLabel}>Solicita Presupuesto Ahora</span>
+                  <p className={styles.heroFormCardSub}>Técnico disponible 24/7. Sin compromiso.</p>
+                </div>
+                <LeadForm
+                  formName="home-hero-form"
+                  buttonText="Solicitar Asistencia Inmediata"
+                />
               </div>
-              <LeadForm
-                formName="home-hero-form"
-                buttonText="Solicitar Asistencia Inmediata"
-              />
             </div>
           </div>
         </div>
       </section>
 
-
-      {/* Core Services Grid */}
+      {/* ═══════════════ CORE SERVICES GRID ═══════════════ */}
       <section className={styles.servicesSection} aria-label="Servicios de bandas transportadoras">
         <div className={styles.container}>
           <h2 className={styles.sectionTitle}>Cintas y Bandas Transportadoras</h2>
@@ -125,7 +136,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Local Coverage Strip — Andalucía */}
+      {/* ═══════════════ LOCAL COVERAGE — Andalucía ═══════════════ */}
       <section className={styles.localCoverageSection}>
         <div className={styles.container}>
           <h2 className={styles.sectionTitle}>Cobertura en Andalucía</h2>
@@ -158,30 +169,73 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Mid-page Lead Form */}
+      {/* ═══════════════ RESULTADO — BANDA PERFECTA ═══════════════ */}
+      <section className={styles.resultSection} aria-label="Resultado de nuestro trabajo">
+        <div className={styles.resultImageWrap}>
+          <Image
+            src="/images/BANDA PERFECTA.webp"
+            alt="Banda transportadora perfectamente instalada y en funcionamiento"
+            fill
+            loading="lazy"
+            style={{ objectFit: 'cover', objectPosition: 'center' }}
+            sizes="(max-width: 768px) 100vw, 55vw"
+          />
+          <div className={styles.resultImageOverlay} />
+        </div>
+        <div className={styles.resultContent}>
+          <span className={styles.resultLabel}>El resultado de nuestro trabajo</span>
+          <h2 className={styles.resultTitle}>
+            Línea en marcha.<br />Garantía de 2 años.
+          </h2>
+          <p className={styles.resultDesc}>
+            Cada intervención termina con una banda perfectamente calibrada, empalme vulcanizado certificado y prueba bajo carga real. Sin medias tintas.
+          </p>
+          <ul className={styles.resultList}>
+            <li><CheckCircle2 size={14} /> Vulcanizado certificado en campo</li>
+            <li><CheckCircle2 size={14} /> Prueba bajo carga real</li>
+            <li><CheckCircle2 size={14} /> Garantía de 2 años sobre el empalme</li>
+          </ul>
+          <Link href="/reparacion" className={styles.resultCta}>
+            Ver servicio de reparación <ArrowRight size={14} />
+          </Link>
+        </div>
+      </section>
+
+      {/* ═══════════════ MID-PAGE FORM — URGENCIA background ═══════════════ */}
       <section className={styles.midFormSection}>
-        <div className={styles.container}>
-          <div className={styles.midFormLayout}>
-            <div className={styles.midFormText}>
-              <h2 className={styles.midFormTitle}>¿Necesita atención técnica rápida?</h2>
-              <p className={styles.midFormSubtitle}>Un ingeniero de nuestro equipo evaluará su caso al instante y sin compromiso.</p>
-              <ul className={styles.midFormBullets}>
-                <li><ShieldCheck size={16} /> Sin compromiso ni coste</li>
-                <li><ArrowRight size={16} /> Respuesta prioritaria 24/7</li>
-                <li><Truck size={16} /> Técnicos disponibles en toda España</li>
-              </ul>
-            </div>
-            <div className={styles.midFormWrapper}>
-              <LeadForm
-                formName="home-mid-form"
-                buttonText="Obtener Presupuesto de Servicio"
-              />
+        <Image
+          src="/images/URGENCIA.webp"
+          alt=""
+          fill
+          loading="lazy"
+          style={{ objectFit: 'cover', objectPosition: 'center' }}
+          sizes="100vw"
+        />
+        <div className={styles.midFormOverlay} />
+        <div className={styles.midFormContentLayer}>
+          <div className={styles.container}>
+            <div className={styles.midFormLayout}>
+              <div className={styles.midFormText}>
+                <h2 className={styles.midFormTitle}>¿Necesita atención técnica rápida?</h2>
+                <p className={styles.midFormSubtitle}>Un técnico evaluará su caso y le dará solución sin compromiso.</p>
+                <ul className={styles.midFormBullets}>
+                  <li><ShieldCheck size={16} /> Sin compromiso ni coste</li>
+                  <li><ArrowRight size={16} /> Respuesta prioritaria 24/7</li>
+                  <li><Truck size={16} /> Técnicos en toda Andalucía</li>
+                </ul>
+              </div>
+              <div className={styles.midFormWrapper}>
+                <LeadForm
+                  formName="home-mid-form"
+                  buttonText="Obtener Presupuesto de Servicio"
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Trust Strip */}
+      {/* ═══════════════ TRUST STRIP ═══════════════ */}
       <section className={styles.trustStrip} aria-label="Credenciales">
         <div className={styles.container}>
           <div className={styles.trustRow}>
@@ -192,13 +246,13 @@ export default function Home() {
               <strong>Protocolos ISO</strong> para cumplimiento normativo
             </div>
             <div className={styles.trustItem}>
-              <strong>Cobertura nacional</strong> con flota propia de intervención
+              <strong>Cobertura Andalucía</strong> con equipos técnicos locales
             </div>
           </div>
         </div>
       </section>
 
-      {/* Final CTA */}
+      {/* ═══════════════ FINAL CTA ═══════════════ */}
       <section className={styles.finalCtaSection}>
         <div className={styles.container}>
           <div className={styles.finalCtaContent}>

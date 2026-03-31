@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { LeadForm } from '@/components/forms/LeadForm';
 import {
   MapPin,
@@ -316,6 +317,27 @@ export default async function LocalInstallationPage({ params }: Props) {
                   definitiva.
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════ INSTALACION IMAGE ═══════════════ */}
+      <section className={styles.instalacionImageSection} aria-hidden="true">
+        <div className={styles.instalacionImageWrap}>
+          <Image
+            src="/images/INSTALACION.webp"
+            alt="Instalación profesional de banda transportadora industrial"
+            fill
+            loading="lazy"
+            style={{ objectFit: 'cover', objectPosition: 'center 40%' }}
+            sizes="100vw"
+          />
+          <div className={styles.instalacionImageOverlay}>
+            <div className={styles.container}>
+              <p className={styles.instalacionImageCaption}>
+                Instalación y puesta en marcha en {city.displayName} — Garantía 2 años
+              </p>
             </div>
           </div>
         </div>

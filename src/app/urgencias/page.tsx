@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { LeadForm } from '@/components/forms/LeadForm';
 import { Clock, Truck, Wrench } from 'lucide-react';
 import styles from './page.module.css';
@@ -45,25 +46,36 @@ export default function UrgentService() {
       <BreadcrumbJsonLd />
       <ServiceJsonLd />
 
-      {/* Hero Section */}
+      {/* ═══════════════ HERO — URGENCIA.webp background ═══════════════ */}
       <section className={styles.heroSection}>
-        <div className={styles.container}>
-          <div className={styles.heroContent}>
-            <div className={styles.alertBadge}>
-              <Clock size={20} />
-              <span>Despacho de Emergencia Prioritario 24/7</span>
-            </div>
-            <h1 className="display-lg" style={{ color: "var(--primary-foreground)" }}>
-              Servicio Urgente 24/7 de Reparación de Bandas y Cintas Transportadoras en Andalucía
-            </h1>
-            <p className={styles.heroSubheadline}>
-              Servicio técnico de bandas transportadoras con despacho inmediato. Intervención crítica in situ para detener el tiempo de inactividad de su cinta transportadora.
-            </p>
-            <div className={styles.heroFormContainer}>
-              <LeadForm 
-                formName="urgent-hero-form" 
-                buttonText="Solicitar Intervención Urgente" 
-              />
+        <Image
+          src="/images/URGENCIA.webp"
+          alt=""
+          fill
+          priority
+          style={{ objectFit: 'cover', objectPosition: 'center 40%' }}
+          sizes="100vw"
+        />
+        <div className={styles.heroOverlay} />
+        <div className={styles.heroContentLayer}>
+          <div className={styles.container}>
+            <div className={styles.heroContent}>
+              <div className={styles.alertBadge}>
+                <Clock size={20} />
+                <span>Despacho de Emergencia Prioritario 24/7</span>
+              </div>
+              <h1 className={styles.heroTitle}>
+                Servicio Urgente 24/7 de Reparación de Bandas y Cintas Transportadoras en Andalucía
+              </h1>
+              <p className={styles.heroSubheadline}>
+                Servicio técnico de bandas transportadoras con despacho inmediato. Intervención crítica in situ para detener el tiempo de inactividad de su cinta transportadora.
+              </p>
+              <div className={styles.heroFormContainer}>
+                <LeadForm
+                  formName="urgent-hero-form"
+                  buttonText="Solicitar Intervención Urgente"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -85,11 +97,11 @@ export default function UrgentService() {
       <section className={styles.midFormSection}>
         <div className={styles.container}>
           <div className={styles.midFormWrapper}>
-            <LeadForm 
-              formName="urgent-mid-form" 
+            <LeadForm
+              formName="urgent-mid-form"
               title="Despacho Inmediato"
               subtitle="Indique su ubicación y tipo de rotura. Iniciamos el protocolo de emergencia."
-              buttonText="Enviar Detalles de Emergencia" 
+              buttonText="Enviar Detalles de Emergencia"
             />
           </div>
         </div>
@@ -129,9 +141,9 @@ export default function UrgentService() {
             <h2 className="headline-lg">¿No es una emergencia inmediata, pero es urgente?</h2>
             <p className="body-md">Solicite una respuesta prioritaria y nuestros ingenieros le contactarán en menos de 1 hora.</p>
             <div className={styles.finalFormContainer}>
-              <LeadForm 
-                formName="urgent-final-form" 
-                buttonText="Solicitar Respuesta Prioritaria" 
+              <LeadForm
+                formName="urgent-final-form"
+                buttonText="Solicitar Respuesta Prioritaria"
               />
             </div>
           </div>

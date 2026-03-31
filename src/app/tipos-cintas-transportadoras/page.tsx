@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import { LeadForm } from '@/components/forms/LeadForm';
 import styles from './page.module.css';
+
 
 export const metadata: Metadata = {
   title: "Tipos de Bandas Transportadoras | Tipos de Cintas Transportadoras Industriales",
@@ -41,6 +43,23 @@ export default function ConveyorBeltTypesPage() {
           </div>
         </div>
       </section>
+
+      {/* Visual Strip */}
+      <div className={styles.imageStrip} aria-hidden="true">
+        <Image
+          src="/images/BANDA-TRANSPORTADORA-A-REPARAR3.webp"
+          alt="Distintos tipos de bandas transportadoras industriales"
+          fill
+          loading="lazy"
+          style={{ objectFit: 'cover', objectPosition: 'center 50%' }}
+          sizes="100vw"
+        />
+        <div className={styles.imageStripOverlay}>
+          <div className={styles.container}>
+            <p className={styles.imageStripCaption}>Cada material tiene una aplicación. La elección correcta multiplica la vida útil de su sistema.</p>
+          </div>
+        </div>
+      </div>
 
       {/* Content Section */}
       <section className={styles.contentSection}>

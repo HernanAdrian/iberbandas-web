@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { LeadForm } from '@/components/forms/LeadForm';
+import Image from 'next/image';
 import { Target, RotateCw, MonitorPlay, Ruler } from 'lucide-react';
 import styles from './page.module.css';
 
@@ -88,6 +89,23 @@ export default function MaintenanceService() {
           </div>
         </div>
       </section>
+
+      {/* ═══════════════ BANDA PERFECTA — resultado del mantenimiento ═══════════════ */}
+      <div className={styles.resultImageSection}>
+        <Image
+          src="/images/BANDA PERFECTA.webp"
+          alt="Banda transportadora en perfecto estado tras mantenimiento preventivo"
+          fill
+          loading="lazy"
+          style={{ objectFit: 'cover', objectPosition: 'center 40%' }}
+          sizes="100vw"
+        />
+        <div className={styles.resultImageOverlay}>
+          <div className={styles.container}>
+            <p className={styles.resultImageText}>El mantenimiento preventivo es la diferencia entre esta imagen y una parada imprevista.</p>
+          </div>
+        </div>
+      </div>
 
       {/* Maintenance Protocol */}
       <section className={styles.protocolSection}>

@@ -1,9 +1,10 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { LeadForm } from '@/components/forms/LeadForm';
 import { MapPin, AlertTriangle, CheckCircle2, Clock, ShieldCheck, Zap, Factory, ArrowRight } from 'lucide-react';
 import styles from './page.module.css';
-import { ANDALUCIA_CITY_SLUGS, getAndaluciaCity, type AndaluciaCity } from '@/lib/andalucia';
+import { ANDALUCIA_CITY_SLUGS, getAndaluciaCity } from '@/lib/andalucia';
 
 /* ── Static Params ── */
 export const dynamicParams = false;
@@ -137,6 +138,45 @@ export default async function LocalRepairPage({ params }: Props) {
           </div>
         </div>
       </div>
+
+      {/* ═══════════════ VISUAL PROOF — repair images ═══════════════ */}
+      <section className={styles.imageGallerySection} aria-hidden="true">
+        <div className={styles.galleryGrid}>
+          <div className={styles.galleryItem}>
+            <Image
+              src="/images/PROBLEMAS.webp"
+              alt="Banda transportadora con problemas de desgaste"
+              fill
+              loading="lazy"
+              style={{ objectFit: 'cover', objectPosition: 'center' }}
+              sizes="(max-width: 768px) 100vw, 33vw"
+            />
+            <div className={styles.galleryCaption}>Antes de la intervención</div>
+          </div>
+          <div className={styles.galleryItem}>
+            <Image
+              src="/images/BANDA-TRANSPORTADORA-A-REPARAR-1.webp"
+              alt="Proceso de reparación de banda transportadora"
+              fill
+              loading="lazy"
+              style={{ objectFit: 'cover', objectPosition: 'center' }}
+              sizes="(max-width: 768px) 100vw, 33vw"
+            />
+            <div className={styles.galleryCaption}>Reparación in situ</div>
+          </div>
+          <div className={styles.galleryItem}>
+            <Image
+              src="/images/BANDA PERFECTA.webp"
+              alt="Banda transportadora reparada y funcionando"
+              fill
+              loading="lazy"
+              style={{ objectFit: 'cover', objectPosition: 'center' }}
+              sizes="(max-width: 768px) 100vw, 33vw"
+            />
+            <div className={styles.galleryCaption}>Resultado garantizado</div>
+          </div>
+        </div>
+      </section>
 
       {/* ═══════════════ LOCAL CONTEXT ═══════════════ */}
       <section className={styles.localContextSection}>

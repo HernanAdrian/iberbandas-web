@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { LeadForm } from '@/components/forms/LeadForm';
+import Image from 'next/image';
 import { Factory, Truck, Box, Recycle, Leaf, Compass } from 'lucide-react';
 import styles from './page.module.css';
 
@@ -97,6 +98,21 @@ export default function IndustriesPage() {
                 <li>Compatibles con separador magnético</li>
               </ul>
             </article>
+          </div>
+
+          {/* Image strip between grid sections */}
+          <div className={styles.industriasBanner}>
+            <Image
+              src="/images/BANDA-TRANSPORTADORA-A-REPARAR2.webp"
+              alt="Banda transportadora industrial en proceso de trabajo"
+              fill
+              loading="lazy"
+              style={{ objectFit: 'cover', objectPosition: 'center' }}
+              sizes="100vw"
+            />
+            <div className={styles.industriasBannerOverlay}>
+              <p className={styles.industriasBannerText}>Cada sector tiene su banda. Cada aplicación, su solución técnica óptima.</p>
+            </div>
           </div>
 
           <div className={styles.midFormContainer}>

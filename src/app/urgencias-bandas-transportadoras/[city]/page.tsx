@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { LeadForm } from '@/components/forms/LeadForm';
 import { AlertTriangle, Clock, Zap, CheckCircle2, ShieldCheck } from 'lucide-react';
 import { ANDALUCIA_CITY_SLUGS, getAndaluciaCity } from '@/lib/andalucia';
@@ -128,6 +129,23 @@ export default async function LocalUrgentPage({ params }: Props) {
               <strong>Garantía</strong>
               <span>de rearranque</span>
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* ── URGENCIA IMAGE ── */}
+      <div className={styles.urgenciaImageSection} aria-hidden="true">
+        <Image
+          src="/images/URGENCIA.webp"
+          alt="Técnico de urgencias atendiendo banda transportadora averiada"
+          fill
+          loading="lazy"
+          style={{ objectFit: 'cover', objectPosition: 'center 40%' }}
+          sizes="100vw"
+        />
+        <div className={styles.urgenciaImageOverlay}>
+          <div className={styles.container}>
+            <p className={styles.urgenciaImageCaption}>Técnico en camino. Cada minuto de parada tiene un coste. Nosotros lo reducimos al mínimo.</p>
           </div>
         </div>
       </div>

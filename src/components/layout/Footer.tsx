@@ -24,7 +24,6 @@ export function Footer() {
               <span className={styles.footerLogoIber}>Iber</span><span className={styles.footerLogoBandas}>Bandas</span>
             </div>
             <p className={styles.footerTagline}>Especialistas en bandas y cintas transportadoras industriales en Andalucía.</p>
-            <p className={styles.footerNif}>NIF: ESBX00000000</p>
           </div>
           <div className={styles.corpLinks}>
             <div className={styles.linkColumn}>

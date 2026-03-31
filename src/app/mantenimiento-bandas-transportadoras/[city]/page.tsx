@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { LeadForm } from '@/components/forms/LeadForm';
 import { MapPin, ShieldCheck, Calendar, Zap, CheckCircle2, Factory, Clock } from 'lucide-react';
 import { ANDALUCIA_CITY_SLUGS, getAndaluciaCity } from '@/lib/andalucia';
@@ -232,6 +233,23 @@ export default async function LocalMaintenancePage({ params }: { params: Promise
           </div>
         </div>
       </section>
+
+      {/* ── RESULT IMAGE ── */}
+      <div className={styles.resultImageSection} aria-hidden="true">
+        <Image
+          src="/images/BANDA PERFECTA.webp"
+          alt="Banda transportadora en perfecto estado tras mantenimiento preventivo"
+          fill
+          loading="lazy"
+          style={{ objectFit: 'cover', objectPosition: 'center 40%' }}
+          sizes="100vw"
+        />
+        <div className={styles.resultImageOverlay}>
+          <div className={styles.container}>
+            <p className={styles.resultImageCaption}>El mantenimiento preventivo convierte este resultado en la norma, no en la excepción.</p>
+          </div>
+        </div>
+      </div>
 
       {/* ── TRUST ── */}
       <section className={styles.trustSection}>

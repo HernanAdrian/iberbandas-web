@@ -151,97 +151,97 @@ export const ANDALUCIA_CITIES: Record<string, AndaluciaCity> = {
     displayName: 'Málaga',
     slug: 'malaga',
     province: 'Málaga',
-    industrialZone: 'Polígono Guadalhorce y Puerto de Málaga',
+    industrialZone: 'toda la provincia de Málaga',
     responseTime: '90 minutos',
-    sectors: ['agroalimentación y conservas', 'logística portuaria', 'distribución y alimentación'],
+    sectors: ['industria agroalimentaria y conservas', 'logística y distribución industrial', 'fabricación y transformación'],
 
     hubIntro:
-      'El Polígono Industrial Guadalhorce concentra más de 1.200 empresas activas. El Puerto de Málaga mueve más de 4 millones de toneladas al año con operación continua 24/7. Las plantas agroalimentarias de la Axarquía y Antequera trabajan a máxima capacidad durante las campañas de aceituna, cítricos y cereales. En todos estos entornos, una cinta transportadora parada es pérdida económica directa e inmediata.',
+      'Málaga y su provincia concentran una actividad industrial creciente y diversa: agroalimentación en la Axarquía y la comarca de Antequera, logística y distribución en los principales polígonos de la capital, actividad portuaria, y un tejido empresarial en expansión a lo largo de toda la Costa del Sol y el interior. En todos estos entornos, una cinta transportadora parada es pérdida económica directa e inmediata. IberBandas da cobertura a toda la provincia con equipos técnicos propios.',
 
     repair: {
       localContext:
-        'El Polígono Industrial Guadalhorce es el mayor núcleo industrial de Málaga con más de 1.200 empresas activas. El Puerto de Málaga mueve más de 4 millones de toneladas de mercancía al año con operación continua 24/7. Las plantas agroalimentarias de la Axarquía y Antequera trabajan a máxima capacidad durante las campañas de aceituna, cítricos y cereales. El calor del verano —hasta 42°C— y la humedad salina del litoral son los dos agresores principales del caucho en Málaga.',
+        'La provincia de Málaga tiene un tejido industrial variado que va desde la agroalimentación —aceitunas, cítricos, hortalizas— hasta la logística de distribución, pasando por industria de transformación en los polígonos de la capital y el interior. El clima mediterráneo de Málaga —veranos calurosos con temperaturas que superan los 40°C y humedad costera— es uno de los entornos más agresivos para las bandas transportadoras de caucho. Los ciclos de campaña agroalimentaria obligan a las líneas a trabajar a máxima intensidad durante meses sin margen para paradas imprevistas.',
       industrialZones: [
-        'Polígono Guadalhorce — mayor núcleo industrial de Málaga',
-        'Puerto de Málaga — logística de importación y exportación',
-        'Antequera — plantas agroalimentarias y de cereales',
-        'Polígono San Rafael — distribución y almacenamiento',
-        'Axarquía — manipulación de aceitunas y cítricos',
+        'Málaga capital y su entorno industrial',
+        'Antequera — plataforma logística y agroalimentación',
+        'Axarquía — manipulación de aceitunas, cítricos y subtropicales',
+        'Costa del Sol — industria de servicios y distribución',
+        'Interior provincial — canteras, áridos y agroalimentación',
       ],
       localProblems:
-        'Las bandas transportadoras en Málaga acumulan fallos específicos derivados del clima mediterráneo extremo y de la tipología industrial de la zona. El calor del verano —hasta 42°C en naves del Guadalhorce— degrada el caucho entre 2 y 3 veces más rápido que en el norte peninsular. La humedad salina del litoral corroe grapas, rodillos y estructuras, especialmente próximas al Puerto. Y durante las campañas agroalimentarias, las líneas de manipulación trabajan sin pausa provocando roturas de empalme por sobrecarga acumulada.',
+        'Las bandas transportadoras en Málaga sufren tres agresores principales: el calor extremo del verano malagueño —que degrada el caucho entre 2 y 3 veces más rápido que en el norte peninsular—, la humedad costera que corroe grapas, rodillos y estructuras metálicas en las instalaciones próximas al litoral, y la sobrecarga estacional de las líneas agroalimentarias durante las campañas. El resultado: empalmes que ceden sin previo aviso, cubiertas desgastadas antes de lo previsto y paradas que interrumpen la producción en el peor momento.',
       keyProblems: [
         {
-          title: 'Desgaste acelerado por calor extremo',
+          title: 'Desgaste acelerado por calor del verano malagueño',
           description:
-            'Las temperaturas de hasta 42°C en naves del Guadalhorce degradan el caucho de las bandas y ablandan los compuestos de los empalmes vulcanizados. Las cubiertas que durarían 4 años en el norte fallan en 18 meses sin mantenimiento preventivo.',
+            'Las temperaturas estivales de Málaga —que alcanzan los 42°C en el interior— degradan el caucho de las bandas y ablandan los compuestos de los empalmes vulcanizados. Las cubiertas que durarían 4 años en el norte peninsular fallan en 18 meses sin mantenimiento preventivo adaptado al clima.',
         },
         {
-          title: 'Corrosión por ambiente costero',
+          title: 'Corrosión por ambiente mediterráneo costero',
           description:
-            'La humedad salina de la costa malagueña penetra en las grapas mecánicas y los rodillos. Los tornillos se corroen, las grapas pierden agarre y el empalme cede bajo carga. Es el fallo silencioso más frecuente en plantas del Puerto de Málaga.',
+            'La humedad salina característica del litoral malagueño penetra en las grapas mecánicas y los rodillos. Los tornillos se corroen, las grapas pierden agarre y el empalme cede bajo carga. Es el fallo más silencioso y frecuente en instalaciones cercanas a la costa.',
         },
         {
-          title: 'Roturas de empalme en plena campaña',
+          title: 'Roturas de empalme en plena campaña agroalimentaria',
           description:
-            'Las plantas de aceitunas, cítricos y hortalizas de la Axarquía y Antequera trabajan al 100% durante los picos de campaña. Los empalmes al límite revientan con la sobrecarga. Cada hora puede suponer entre 3.000 € y 12.000 € de pérdidas.',
+            'Las plantas de manipulación de aceitunas, cítricos y productos subtropicales de la Axarquía y el interior trabajan al máximo durante los picos de campaña. Los empalmes al límite revientan bajo la sobrecarga. Cada hora de parada puede suponer entre 3.000 € y 12.000 € de pérdidas.',
         },
       ],
       costWarning:
-        'Una parada de línea no programada en el Polígono Guadalhorce puede costar entre 2.000 € y 15.000 € por hora según la capacidad de producción.',
+        'Una parada no planificada en una línea industrial activa en la provincia de Málaga puede costar entre 2.000 € y 15.000 € por hora según la capacidad de producción y el sector.',
     },
 
     maintenance: {
       intro:
-        'El mantenimiento preventivo en Málaga tiene dos enemigos principales: el calor extremo del verano y la humedad salina del litoral. Sin un plan de inspección periódico, las bandas del Guadalhorce tienen una vida útil un 40% inferior a la media nacional. Nuestros equipos programan las intervenciones para minimizar el impacto en su producción.',
+        'El mantenimiento preventivo en Málaga tiene que hacer frente a dos amenazas constantes: el calor extremo del verano y la humedad del ambiente costero. Sin un plan de inspección periódico adaptado al clima malagueño, las bandas de caucho tienen una vida útil un 40% inferior a la media nacional. Nuestros equipos diseñan el calendario de intervenciones para que su producción no se detenga en los momentos de máxima exigencia.',
       challenges: [
         {
-          title: 'Protección contra degradación térmica',
+          title: 'Protección contra degradación térmica estival',
           description:
-            'Inspección del estado del caucho en cada revisión. Detección de reblandecimiento y microfisuras antes de que la cubierta ceda. Recomendación de compuestos HT para entornos de calor extremo.',
+            'Inspección del estado del caucho antes y después del verano. Detección de reblandecimiento y microfisuras antes de que la cubierta ceda. Recomendación de compuestos de alta temperatura para instalaciones en zonas de calor extremo.',
         },
         {
-          title: 'Revisión anticorrosión en instalaciones costeras',
+          title: 'Revisión anticorrosión para instalaciones costeras',
           description:
-            'Inspección de grapas mecánicas, tornillos de sujeción y rodillos en plantas próximas al Puerto. Aplicación de protección anticorrosiva y sustitución preventiva de componentes en riesgo.',
+            'Inspección de grapas mecánicas, tornillos de sujeción y rodillos en plantas expuestas al ambiente salino. Aplicación de protección anticorrosiva y sustitución preventiva de los componentes en riesgo antes de que fallen.',
         },
         {
-          title: 'Ajuste de tensión pre-campaña',
+          title: 'Preparación pre-campaña agroalimentaria',
           description:
-            'Revisión completa antes de cada campaña agroalimentaria. Ajuste de tensión, centrado de la banda y comprobación de empalmes para garantizar el funcionamiento sin paradas durante los picos de producción.',
+            'Revisión completa de todas las cintas de manipulación antes del inicio de cada campaña. Ajuste de tensión, centrado de la banda y comprobación de empalmes para garantizar el funcionamiento sin paradas durante los picos de producción.',
         },
       ],
       protocol:
-        'Visitamos sus instalaciones en el Guadalhorce, Antequera o la Axarquía para evaluar el estado de cada sistema, documentar las bandas en riesgo y planificar las intervenciones antes de la temporada alta.',
+        'Visitamos sus instalaciones en cualquier punto de la provincia de Málaga para evaluar el estado de cada sistema, documentar las bandas en riesgo y planificar las intervenciones antes de la temporada alta.',
     },
 
     installation: {
       intro:
-        'Suministramos e instalamos bandas transportadoras para la industria agroalimentaria, logística y portuaria de Málaga. Seleccionamos el compuesto óptimo según la carga, la temperatura y el entorno para maximizar la vida útil en las condiciones específicas del Guadalhorce y la costa malagueña.',
+        'Suministramos e instalamos bandas transportadoras para la industria agroalimentaria, logística y de transformación en toda la provincia de Málaga. Seleccionamos el compuesto óptimo según la carga, la temperatura ambiente y el tipo de entorno —costero, interior o industrial— para maximizar la vida útil en las condiciones específicas de cada instalación.',
       specs: [
         {
-          title: 'Bandas resistentes al calor para el sector alimentario',
+          title: 'Bandas resistentes al calor para el sector agroalimentario',
           description:
-            'Compuestos HT y OR (Oil Resistant) para plantas agroalimentarias del Guadalhorce. Mayor durabilidad en entornos de alta temperatura y contacto con aceites vegetales.',
+            'Compuestos HT y OR (Oil Resistant) para plantas expuestas a temperaturas extremas y a contacto con aceites vegetales, frutas y hortalizas. Mayor durabilidad en condiciones de calor y humedad elevada.',
         },
         {
-          title: 'Bandas anticorrosión para instalaciones portuarias',
+          title: 'Bandas anticorrosión para instalaciones en entorno costero',
           description:
-            'Coberturas y grapas de acero inoxidable para plantas próximas al Puerto de Málaga. Protección específica contra la corrosión por ambiente marino.',
+            'Grapas y componentes de acero inoxidable para instalaciones próximas al litoral malagueño. Protección específica contra la corrosión por ambiente marino que multiplica la vida útil de los empalmes.',
         },
         {
-          title: 'Instalación express sin parar la producción',
+          title: 'Instalación coordinada sin parar la producción',
           description:
-            'Programa de instalación en ventanas de paro planificadas para minimizar el impacto en su cadena de producción. Vulcanizado in situ en menos de 4 horas en la mayoría de los casos.',
+            'Programamos la instalación en ventanas de paro planificadas para minimizar el impacto en su cadena de producción. Vulcanizado in situ en menos de 4 horas en la mayoría de los casos de la provincia.',
         },
       ],
     },
 
     urgency: {
       intro:
-        'Equipo de guardia en Málaga capital con cobertura directa al Polígono Guadalhorce, Puerto de Málaga, Antequera y la Axarquía. Tiempo de respuesta garantizado: 90 minutos desde la recepción de su alerta.',
+        'Equipos de guardia en la provincia de Málaga con cobertura a la capital, Antequera, la Axarquía, la Costa del Sol y el interior provincial. Movilizamos el técnico más cercano a su instalación con todo el material necesario para reparar in situ. Tiempo de respuesta garantizado: 90 minutos desde la recepción de su alerta.',
       guarantee:
-        'El técnico llega con prensa de vulcanizado portátil, material de empalme mecánico y stock de bandas de emergencia. En el 94% de los casos resolvemos la avería sin necesidad de pedir material adicional.',
+        'El técnico llega con prensa de vulcanizado portátil, material de empalme mecánico y stock de bandas de emergencia para los formatos más comunes en la industria malagueña. En el 94% de los casos resolvemos la avería sin necesidad de pedir material adicional.',
     },
   },
 
