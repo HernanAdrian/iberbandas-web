@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `Mantenimiento de Bandas Transportadoras en ${city.displayName} | IberBandas`,
     description: `Plan de mantenimiento preventivo de cintas transportadoras en ${city.displayName}. Auditoría gratuita, inspecciones programadas y respuesta rápida. Cobertura en ${city.industrialZone}.`,
-    alternates: { canonical: `/mantenimiento-bandas-transportadoras/${citySlug}` },
+    alternates: { canonical: `/mantenimiento-bandas-transportadoras/${citySlug}/` },
   };
 }
 

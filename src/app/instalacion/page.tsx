@@ -8,7 +8,7 @@ import styles from './page.module.css';
 export const metadata: Metadata = {
   title: "Montaje y Suministro de Bandas Transportadoras | Instalación de Cintas",
   description: "Montaje y suministro de bandas transportadoras industriales. Instalación de cintas transportadoras de caucho, PVC, cable de acero. Especificación técnica, desmontaje controlado y calibración bajo carga.",
-  alternates: { canonical: "/instalacion" },
+  alternates: { canonical: "/instalacion/" },
 };
 
 function BreadcrumbJsonLd() {

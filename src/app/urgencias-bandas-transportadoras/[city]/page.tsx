@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `Urgencias 24h Bandas Transportadoras en ${city.displayName} | IberBandas`,
     description: `Servicio técnico urgente 24/7 en ${city.displayName}. Servicio urgente 24/7 para reparación de cintas transportadoras en ${city.industrialZone}. Atendemos paradas críticas en todos los sectores industriales.`,
-    alternates: { canonical: `/urgencias-bandas-transportadoras/${citySlug}` },
+    alternates: { canonical: `/urgencias-bandas-transportadoras/${citySlug}/` },
   };
 }
 

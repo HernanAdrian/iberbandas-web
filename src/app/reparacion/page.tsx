@@ -8,7 +8,7 @@ import styles from './page.module.css';
 export const metadata: Metadata = {
   title: "Reparación de Bandas Transportadoras | Arreglo de Cintas Transportadoras",
   description: "Reparación profesional de bandas transportadoras y arreglo de cintas transportadoras. Vulcanizado, empalme y reparación mecánica in situ. ¿Problemas con su banda transportadora? Respuesta inmediata.",
-  alternates: { canonical: "/reparacion" },
+  alternates: { canonical: "/reparacion/" },
 };
 
 function BreadcrumbJsonLd() {

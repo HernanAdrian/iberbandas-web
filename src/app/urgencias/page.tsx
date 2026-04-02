@@ -8,7 +8,7 @@ import styles from './page.module.css';
 export const metadata: Metadata = {
   title: "Reparación Urgente Banda Transportadora | Servicio Técnico 24/7",
   description: "¿Cinta transportadora averiada? Servicio técnico de bandas transportadoras con despacho inmediato 24/7. Reparación urgente in situ. Respuesta en menos de 1 hora.",
-  alternates: { canonical: "/urgencias" },
+  alternates: { canonical: "/urgencias/" },
 };
 
 function BreadcrumbJsonLd() {

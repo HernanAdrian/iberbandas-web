@@ -8,7 +8,7 @@ import styles from './page.module.css';
 export const metadata: Metadata = {
   title: "Mantenimiento de Bandas Transportadoras | Mantenimiento Preventivo Cintas",
   description: "Mantenimiento de bandas transportadoras y cintas transportadoras industriales. Programas preventivos: alineación láser, calibración de tensión y auditorías de desgaste. Evite paradas no planificadas.",
-  alternates: { canonical: "/mantenimiento" },
+  alternates: { canonical: "/mantenimiento/" },
 };
 
 function BreadcrumbJsonLd() {

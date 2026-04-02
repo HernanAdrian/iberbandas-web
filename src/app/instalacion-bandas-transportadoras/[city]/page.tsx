@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `Instalación de Bandas Transportadoras en ${city.displayName} | IberBandas`,
     description: `Suministro e instalación de bandas transportadoras en ${city.displayName}. Medición in situ, empalme vulcanizado y calibración bajo carga real. Cobertura en ${city.industrialZone}. Servicio urgente 24/7.`,
     alternates: {
-      canonical: `/instalacion-bandas-transportadoras/${citySlug}`,
+      canonical: `/instalacion-bandas-transportadoras/${citySlug}/`,
     },
   };
 }

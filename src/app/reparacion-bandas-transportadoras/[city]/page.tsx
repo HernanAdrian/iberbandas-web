@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `Reparación de Bandas Transportadoras en ${city.displayName} | Servicio in situ 24/7 — IberBandas`,
     description: `Su cinta transportadora ha fallado en ${city.displayName}. Técnico in situ con prioridad máxima. Reparación de bandas en ${city.industrialZone}. Sin compromiso. Solicite presupuesto ahora.`,
-    alternates: { canonical: `/reparacion-bandas-transportadoras/${citySlug}` },
+    alternates: { canonical: `/reparacion-bandas-transportadoras/${citySlug}/` },
   };
 }
 

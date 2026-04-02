@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `Bandas Transportadoras en ${city.displayName} | Reparación, Mantenimiento e Instalación — IberBandas`,
     description: `${descriptionBase}… Servicio en ${city.industrialZone}.`,
-    alternates: { canonical: `/bandas-transportadoras/${citySlug}` },
+    alternates: { canonical: `/bandas-transportadoras/${citySlug}/` },
   };
 }
 

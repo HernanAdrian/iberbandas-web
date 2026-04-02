@@ -7,7 +7,7 @@ import styles from './page.module.css';
 export const metadata: Metadata = {
   title: "Tipos de Bandas Transportadoras | Tipos de Cintas Transportadoras Industriales",
   description: "Guía completa de tipos de bandas transportadoras y cintas transportadoras industriales: caucho para trabajos pesados, PVC/PU higiénico, plástico modular y cable de acero. Comparativa de materiales.",
-  alternates: { canonical: "/tipos-cintas-transportadoras" },
+  alternates: { canonical: "/tipos-cintas-transportadoras/" },
 };
 
 function BreadcrumbJsonLd() {

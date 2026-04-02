@@ -6,7 +6,7 @@ import styles from './page.module.css';
 export const metadata: Metadata = {
   title: "Presupuesto Bandas Transportadoras | Contactar Servicio Técnico",
   description: "Solicite presupuesto para reparación, mantenimiento o montaje de bandas transportadoras y cintas transportadoras industriales. Atendemos su consulta con prioridad. Formulario directo.",
-  alternates: { canonical: "/contacto" },
+  alternates: { canonical: "/contacto/" },
 };
 
 function BreadcrumbJsonLd() {

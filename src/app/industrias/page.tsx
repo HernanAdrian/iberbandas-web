@@ -8,7 +8,7 @@ import styles from './page.module.css';
 export const metadata: Metadata = {
   title: "Bandas Transportadoras por Sector Industrial | Cintas para Logística, Minería y Alimentación",
   description: "Cintas transportadoras y bandas transportadoras adaptadas a cada sector: logística, fabricación, reciclaje, alimentación, agricultura y minería. Materiales y especificaciones técnicas por industria.",
-  alternates: { canonical: "/industrias" },
+  alternates: { canonical: "/industrias/" },
 };
 
 function BreadcrumbJsonLd() {
