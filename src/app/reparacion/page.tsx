@@ -28,14 +28,104 @@ function ServiceJsonLd() {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Reparación de Bandas Transportadoras",
-    "description": "Servicio profesional de reparación de bandas transportadoras y arreglo de cintas transportadoras industriales. Vulcanizado in situ, empalme mecánico y reparación de emergencia 24/7.",
+    "description": "Servicio profesional de reparación de bandas transportadoras y arreglo de cintas transportadoras industriales en Andalucía. Vulcanizado in situ, empalme mecánico y reparación de emergencia 24/7 en Málaga, Sevilla, Granada, Córdoba, Almería y Cádiz.",
     "provider": {
-      "@type": "Organization",
+      "@type": "LocalBusiness",
       "name": "IberBandas",
       "url": "https://www.iberband.es",
     },
-    "areaServed": { "@type": "Country", "name": "España" },
+    "areaServed": [
+      { "@type": "State", "name": "Andalucía" },
+      { "@type": "City", "name": "Málaga" },
+      { "@type": "City", "name": "Sevilla" },
+      { "@type": "City", "name": "Granada" },
+      { "@type": "City", "name": "Córdoba" },
+      { "@type": "City", "name": "Almería" },
+      { "@type": "City", "name": "Cádiz" },
+    ],
     "serviceType": "Reparación de Bandas Transportadoras",
+    "availableLanguage": "es",
+    "priceRange": "€€",
+  };
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />;
+}
+
+function HowToJsonLd() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Cómo funciona el servicio de reparación de bandas transportadoras de IberBandas",
+    "description": "Proceso paso a paso para solicitar y recibir reparación de una banda transportadora averiada.",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "position": 1,
+        "name": "Contacto y diagnóstico inicial",
+        "text": "Rellene el formulario describiendo el problema de su banda transportadora. Un ingeniero evaluará su caso y le contactará con la máxima prioridad.",
+      },
+      {
+        "@type": "HowToStep",
+        "position": 2,
+        "name": "Inspección y presupuesto in situ",
+        "text": "Desplazamos un equipo técnico a su instalación para diagnosticar el fallo, evaluar el estado de la cinta transportadora y proponer la mejor solución sin compromiso.",
+      },
+      {
+        "@type": "HowToStep",
+        "position": 3,
+        "name": "Reparación y puesta en marcha",
+        "text": "Ejecutamos la reparación de la banda transportadora in situ con la técnica adecuada (vulcanizado, empalme frío o mecánico). Validamos la resistencia bajo carga y entregamos la línea operativa con garantía.",
+      },
+    ],
+  };
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />;
+}
+
+function FAQJsonLd() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Cuánto tarda una reparación urgente de banda transportadora?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "En urgencias, nuestro equipo se desplaza con prioridad máxima. El tiempo de intervención depende de la distancia, pero el objetivo es tener la línea operativa en la misma visita. Para reparaciones programadas, coordinamos la visita con sus turnos de producción.",
+        },
+      },
+      {
+        "@type": "Question",
+        "name": "¿Reparáis bandas transportadoras los fines de semana y festivos?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. IberBandas ofrece servicio de reparación urgente de bandas transportadoras 24 horas al día, 7 días a la semana, incluyendo fines de semana y festivos nacionales y regionales en Andalucía.",
+        },
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué tipos de bandas transportadoras reparáis?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Reparamos todo tipo de bandas y cintas transportadoras industriales: caucho multicapa, PVC, poliuretano (PU), plástico modular, cable de acero y bandas especiales resistentes al calor, aceites o productos químicos.",
+        },
+      },
+      {
+        "@type": "Question",
+        "name": "¿Hacéis presupuesto gratuito de reparación?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. La evaluación inicial y el presupuesto de reparación son gratuitos y sin compromiso. Un ingeniero visita su instalación en Andalucía para diagnosticar el fallo y proponer la solución más adecuada.",
+        },
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué garantía incluye la reparación?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Todas nuestras reparaciones incluyen garantía sobre el empalme y la zona reparada. Las reparaciones por vulcanizado en caliente tienen garantía de hasta 2 años. Utilizamos materiales homologados y protocolos ISO.",
+        },
+      },
+    ],
   };
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />;
 }
@@ -45,6 +135,8 @@ export default function RepairService() {
     <div className={styles.pageWrapper}>
       <BreadcrumbJsonLd />
       <ServiceJsonLd />
+      <HowToJsonLd />
+      <FAQJsonLd />
 
       {/* ═══════════════ HERO ═══════════════ */}
       <section className={styles.heroSection}>

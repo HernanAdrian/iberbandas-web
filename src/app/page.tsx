@@ -39,7 +39,7 @@ export default function Home() {
       <section className={styles.heroSection}>
         <Image
           src="/images/HERO.webp"
-          alt=""
+          alt="Técnico especialista reparando banda transportadora industrial en Andalucía"
           fill
           priority
           style={{ objectFit: 'cover', objectPosition: 'center 30%' }}
@@ -169,6 +169,48 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ═══════════════ SERVICIOS EN MÁLAGA ═══════════════ */}
+      <section className={styles.malagaSection}>
+        <div className={styles.container}>
+          <div className={styles.malagaHeader}>
+            <MapPin size={20} className={styles.malagaPin} aria-hidden="true" />
+            <h2 className={styles.sectionTitle}>Servicios de Bandas Transportadoras en Málaga</h2>
+          </div>
+          <p className={styles.malagaDesc}>
+            Málaga y su provincia concentran un tejido industrial variado — logística, agroalimentación, manipulación, distribución y sector servicios. Nuestros equipos técnicos cubren toda la provincia: capital, Antequera, Axarquía, Costa del Sol e interior.
+          </p>
+          <div className={styles.malagaGrid}>
+            <Link href="/reparacion-bandas-transportadoras/malaga" className={styles.malagaCard}>
+              <Wrench size={22} className={styles.malagaCardIcon} aria-hidden="true" />
+              <strong>Reparación en Málaga</strong>
+              <span>Urgente 24/7 · in situ</span>
+              <ArrowRight size={14} className={styles.malagaCardArrow} aria-hidden="true" />
+            </Link>
+            <Link href="/mantenimiento-bandas-transportadoras/malaga" className={styles.malagaCard}>
+              <ShieldCheck size={22} className={styles.malagaCardIcon} aria-hidden="true" />
+              <strong>Mantenimiento en Málaga</strong>
+              <span>Preventivo · auditoría gratuita</span>
+              <ArrowRight size={14} className={styles.malagaCardArrow} aria-hidden="true" />
+            </Link>
+            <Link href="/instalacion-bandas-transportadoras/malaga" className={styles.malagaCard}>
+              <Truck size={22} className={styles.malagaCardIcon} aria-hidden="true" />
+              <strong>Instalación en Málaga</strong>
+              <span>Suministro e instalación</span>
+              <ArrowRight size={14} className={styles.malagaCardArrow} aria-hidden="true" />
+            </Link>
+            <Link href="/urgencias-bandas-transportadoras/malaga" className={styles.malagaCard}>
+              <ClockAlert size={22} className={styles.malagaCardIcon} aria-hidden="true" />
+              <strong>Urgencias en Málaga</strong>
+              <span>Respuesta inmediata 24h</span>
+              <ArrowRight size={14} className={styles.malagaCardArrow} aria-hidden="true" />
+            </Link>
+          </div>
+          <p className={styles.malagaMore}>
+            <Link href="/bandas-transportadoras/malaga">Ver todos los servicios en Málaga →</Link>
+          </p>
+        </div>
+      </section>
+
       {/* ═══════════════ RESULTADO — BANDA PERFECTA ═══════════════ */}
       <section className={styles.resultSection} aria-label="Resultado de nuestro trabajo">
         <div className={styles.resultImageWrap}>
@@ -205,7 +247,7 @@ export default function Home() {
       <section className={styles.midFormSection}>
         <Image
           src="/images/URGENCIA.webp"
-          alt=""
+          alt="Intervención de emergencia 24/7 en banda transportadora averiada"
           fill
           loading="lazy"
           style={{ objectFit: 'cover', objectPosition: 'center' }}

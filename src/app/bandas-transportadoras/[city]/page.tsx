@@ -56,8 +56,8 @@ export default async function CityHubPage({ params }: { params: Promise<{ city: 
       {
         '@type': 'ListItem',
         position: 2,
-        name: 'Ciudades',
-        item: 'https://www.iberband.es/bandas-transportadoras',
+        name: 'Bandas Transportadoras en Andalucía',
+        item: 'https://www.iberband.es/bandas-transportadoras/',
       },
       {
         '@type': 'ListItem',

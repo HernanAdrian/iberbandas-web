@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import Script from "next/script";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
     default: "IberBandas | Reparación de Bandas Transportadoras Industriales",
     template: "%s | IberBandas",
   },
-  description: "Reparación urgente 24/7, mantenimiento preventivo y sustitución de bandas transportadoras industriales en toda España. +25 años de experiencia. Servicio técnico 24/7.",
+  description: "Reparación urgente 24/7, mantenimiento preventivo e instalación de bandas transportadoras industriales en Andalucía. Servicio técnico especializado en Málaga, Sevilla, Granada, Córdoba, Almería y Cádiz. +25 años de experiencia.",
   metadataBase: new URL("https://www.iberband.es"),
   alternates: {
     canonical: "/",
@@ -28,8 +29,22 @@ export const metadata: Metadata = {
     type: "website",
     locale: "es_ES",
     siteName: "IberBandas",
-    title: "IberBandas | Reparación de Bandas Transportadoras Industriales",
-    description: "Reparación urgente 24/7, mantenimiento preventivo y sustitución de bandas transportadoras industriales en toda España.",
+    title: "IberBandas | Reparación de Bandas Transportadoras en Andalucía",
+    description: "Reparación urgente 24/7, mantenimiento preventivo e instalación de bandas transportadoras industriales en Andalucía. Cobertura en Málaga, Sevilla, Granada, Córdoba, Almería y Cádiz.",
+    images: [
+      {
+        url: "/images/HERO.webp",
+        width: 1200,
+        height: 630,
+        alt: "IberBandas — Reparación y mantenimiento de bandas transportadoras industriales en Andalucía",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "IberBandas | Reparación de Bandas Transportadoras en Andalucía",
+    description: "Servicio técnico urgente 24/7 de bandas y cintas transportadoras industriales. Cobertura en Málaga, Sevilla y toda Andalucía.",
+    images: ["/images/HERO.webp"],
   },
   robots: {
     index: true,
@@ -51,15 +66,14 @@ function OrganizationJsonLd() {
     "image": "https://www.iberband.es/images/LOGOTIPO.webp",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Polígono Industrial Principal, Nave 4",
-      "addressLocality": "Madrid",
-      "postalCode": "28000",
+      "addressLocality": "Málaga",
+      "addressRegion": "Andalucía",
       "addressCountry": "ES",
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "40.4168",
-      "longitude": "-3.7038",
+      "latitude": "36.7213",
+      "longitude": "-4.4217",
     },
     "email": "industria@iberband.es",
     "openingHoursSpecification": [
@@ -69,11 +83,22 @@ function OrganizationJsonLd() {
         "opens": "08:00",
         "closes": "18:00",
       },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday", "Sunday"],
+        "opens": "00:00",
+        "closes": "23:59",
+      },
     ],
-    "areaServed": {
-      "@type": "Country",
-      "name": "España",
-    },
+    "areaServed": [
+      { "@type": "State", "name": "Andalucía" },
+      { "@type": "City", "name": "Málaga" },
+      { "@type": "City", "name": "Sevilla" },
+      { "@type": "City", "name": "Granada" },
+      { "@type": "City", "name": "Córdoba" },
+      { "@type": "City", "name": "Almería" },
+      { "@type": "City", "name": "Cádiz" },
+    ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Servicios de Bandas Transportadoras",
@@ -129,6 +154,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
+      <head>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-434265689"
+          strategy="afterInteractive"
+        />
+        <Script id="google-tag" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-434265689');
+          `}
+        </Script>
+      </head>
       <body className={inter.className} style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
         <OrganizationJsonLd />
         <Header />

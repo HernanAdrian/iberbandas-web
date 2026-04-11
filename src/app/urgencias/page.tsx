@@ -28,14 +28,71 @@ function ServiceJsonLd() {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Reparación Urgente de Bandas Transportadoras 24/7",
-    "description": "Servicio técnico urgente 24/7 para reparación de bandas transportadoras y cintas industriales. Despacho inmediato, intervención in situ en toda España.",
+    "description": "Servicio técnico urgente 24/7 para reparación de bandas transportadoras y cintas industriales en Andalucía. Despacho inmediato, intervención in situ en Málaga, Sevilla, Granada, Córdoba, Almería y Cádiz.",
     "provider": {
-      "@type": "Organization",
+      "@type": "LocalBusiness",
       "name": "IberBandas",
       "url": "https://www.iberband.es",
     },
-    "areaServed": { "@type": "Country", "name": "España" },
+    "areaServed": [
+      { "@type": "State", "name": "Andalucía" },
+      { "@type": "City", "name": "Málaga" },
+      { "@type": "City", "name": "Sevilla" },
+      { "@type": "City", "name": "Granada" },
+      { "@type": "City", "name": "Córdoba" },
+      { "@type": "City", "name": "Almería" },
+      { "@type": "City", "name": "Cádiz" },
+    ],
     "serviceType": "Reparación Urgente de Bandas Transportadoras",
+    "availableLanguage": "es",
+    "hoursAvailable": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "00:00",
+      "closes": "23:59",
+    },
+  };
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />;
+}
+
+function FAQJsonLd() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿En cuánto tiempo llega el técnico de urgencias?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nuestro servicio de urgencias 24/7 garantiza despacho inmediato. En cuanto recibimos la solicitud, un técnico le contacta en menos de 5 minutos para confirmar la incidencia y ponerse en camino con la prioridad máxima.",
+        },
+      },
+      {
+        "@type": "Question",
+        "name": "¿Trabajáis 24 horas los fines de semana y festivos?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. El servicio de urgencias de IberBandas opera los 365 días del año, incluyendo sábados, domingos y festivos. Las averías en bandas transportadoras no esperan al lunes.",
+        },
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué lleváis en el vehículo de urgencias?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nuestros equipos móviles van equipados con prensas de vulcanizado en caliente, herramientas de empalme en frío, grapas mecánicas, material de parcheo y banda de repuesto de los tipos más habituales. El objetivo es reparar in situ sin necesidad de una segunda visita.",
+        },
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cubrís toda Andalucía en urgencias?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. Disponemos de equipos técnicos en Málaga, Sevilla, Granada, Córdoba, Almería y Cádiz, lo que nos permite cubrir toda la comunidad de Andalucía con tiempos de respuesta mínimos.",
+        },
+      },
+    ],
   };
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />;
 }
@@ -45,12 +102,13 @@ export default function UrgentService() {
     <div className={styles.pageWrapper}>
       <BreadcrumbJsonLd />
       <ServiceJsonLd />
+      <FAQJsonLd />
 
       {/* ═══════════════ HERO — URGENCIA.webp background ═══════════════ */}
       <section className={styles.heroSection}>
         <Image
           src="/images/URGENCIA.webp"
-          alt=""
+          alt="Servicio técnico urgente 24/7 — técnico desplegado para reparar banda transportadora averiada"
           fill
           priority
           style={{ objectFit: 'cover', objectPosition: 'center 40%' }}

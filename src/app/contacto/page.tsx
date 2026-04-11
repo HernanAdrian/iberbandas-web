@@ -9,6 +9,51 @@ export const metadata: Metadata = {
   alternates: { canonical: "/contacto/" },
 };
 
+function LocalBusinessJsonLd() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "IberBandas",
+    "description": "Empresa especializada en reparación, mantenimiento e instalación de bandas transportadoras industriales en Andalucía. Servicio urgente 24/7.",
+    "url": "https://www.iberband.es",
+    "email": "industria@iberband.es",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Málaga",
+      "addressRegion": "Andalucía",
+      "addressCountry": "ES",
+    },
+    "areaServed": [
+      { "@type": "State", "name": "Andalucía" },
+      { "@type": "City", "name": "Málaga" },
+      { "@type": "City", "name": "Sevilla" },
+      { "@type": "City", "name": "Granada" },
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "email": "industria@iberband.es",
+      "availableLanguage": "es",
+      "areaServed": "ES",
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "08:00",
+        "closes": "18:00",
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday","Sunday"],
+        "opens": "00:00",
+        "closes": "23:59",
+      },
+    ],
+  };
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />;
+}
+
 function BreadcrumbJsonLd() {
   const schema = {
     "@context": "https://schema.org",
@@ -24,6 +69,7 @@ function BreadcrumbJsonLd() {
 export default function ContactPage() {
   return (
     <div className={styles.pageWrapper}>
+      <LocalBusinessJsonLd />
       <BreadcrumbJsonLd />
       {/* Header */}
       <section className={styles.headerSection}>

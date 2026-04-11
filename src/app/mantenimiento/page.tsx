@@ -27,15 +27,67 @@ function ServiceJsonLd() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Mantenimiento de Bandas Transportadoras",
-    "description": "Mantenimiento preventivo y predictivo de bandas transportadoras y cintas industriales. Alineación láser, calibración de tensión, auditorías de desgaste y optimización de rodillos.",
+    "name": "Mantenimiento Preventivo de Bandas Transportadoras",
+    "description": "Mantenimiento preventivo y predictivo de bandas transportadoras y cintas industriales en Andalucía. Alineación láser, calibración de tensión, auditorías de desgaste y optimización de rodillos en Málaga, Sevilla, Granada, Córdoba, Almería y Cádiz.",
     "provider": {
-      "@type": "Organization",
+      "@type": "LocalBusiness",
       "name": "IberBandas",
       "url": "https://www.iberband.es",
     },
-    "areaServed": { "@type": "Country", "name": "España" },
+    "areaServed": [
+      { "@type": "State", "name": "Andalucía" },
+      { "@type": "City", "name": "Málaga" },
+      { "@type": "City", "name": "Sevilla" },
+      { "@type": "City", "name": "Granada" },
+      { "@type": "City", "name": "Córdoba" },
+      { "@type": "City", "name": "Almería" },
+      { "@type": "City", "name": "Cádiz" },
+    ],
     "serviceType": "Mantenimiento de Bandas Transportadoras",
+    "availableLanguage": "es",
+    "priceRange": "€€",
+  };
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />;
+}
+
+function FAQJsonLd() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Qué incluye el plan de mantenimiento preventivo de bandas transportadoras?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El plan incluye: auditoría técnica inicial gratuita, inspección visual e instrumental de bandas y empalmes, alineación láser, calibración de tensión, revisión y rotación de rodillos, escaneo de desgaste, y un informe técnico con plan de acciones preventivas personalizado.",
+        },
+      },
+      {
+        "@type": "Question",
+        "name": "¿Con qué frecuencia hay que revisar una banda transportadora?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Depende del uso y sector. En entornos de alta producción (logística, minería, agroalimentación) recomendamos revisiones trimestrales. En usos moderados, cada 6 meses es suficiente. La auditoría inicial identifica el plan óptimo para su instalación específica.",
+        },
+      },
+      {
+        "@type": "Question",
+        "name": "¿Hacéis auditoría inicial gratuita?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. La primera visita técnica es completamente gratuita y sin compromiso. Nuestro equipo se desplaza a sus instalaciones en Andalucía para evaluar el estado de sus bandas transportadoras y entregarle un plan de mantenimiento personalizado.",
+        },
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuánto se reduce el riesgo de avería con mantenimiento preventivo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nuestros planes de mantenimiento preventivo reducen más del 80% la probabilidad de avería catastrófica en producción. El coste de mantenimiento es entre 5 y 10 veces menor que el coste de una parada no planificada.",
+        },
+      },
+    ],
   };
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />;
 }
@@ -45,6 +97,7 @@ export default function MaintenanceService() {
     <div className={styles.pageWrapper}>
       <BreadcrumbJsonLd />
       <ServiceJsonLd />
+      <FAQJsonLd />
 
       {/* Hero Section */}
       <section className={styles.heroSection}>

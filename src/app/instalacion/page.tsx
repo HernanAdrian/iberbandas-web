@@ -27,15 +27,67 @@ function ServiceJsonLd() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Instalación de Bandas Transportadoras",
-    "description": "Suministro, montaje e instalación de bandas transportadoras industriales. Bandas de caucho, PVC, PU y cable de acero. Desmontaje controlado y calibración bajo carga.",
+    "name": "Instalación y Suministro de Bandas Transportadoras",
+    "description": "Suministro, montaje e instalación de bandas transportadoras industriales en Andalucía. Bandas de caucho, PVC, PU y cable de acero. Desmontaje controlado y calibración bajo carga en Málaga, Sevilla, Granada, Córdoba, Almería y Cádiz.",
     "provider": {
-      "@type": "Organization",
+      "@type": "LocalBusiness",
       "name": "IberBandas",
       "url": "https://www.iberband.es",
     },
-    "areaServed": { "@type": "Country", "name": "España" },
+    "areaServed": [
+      { "@type": "State", "name": "Andalucía" },
+      { "@type": "City", "name": "Málaga" },
+      { "@type": "City", "name": "Sevilla" },
+      { "@type": "City", "name": "Granada" },
+      { "@type": "City", "name": "Córdoba" },
+      { "@type": "City", "name": "Almería" },
+      { "@type": "City", "name": "Cádiz" },
+    ],
     "serviceType": "Instalación de Bandas Transportadoras",
+    "availableLanguage": "es",
+    "priceRange": "€€",
+  };
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />;
+}
+
+function FAQJsonLd() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Qué tipos de bandas transportadoras instaláis?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Instalamos todos los tipos de bandas transportadoras industriales: caucho multicapa para cargas pesadas, PVC/PU higiénico para alimentación y farmacia, plástico modular, cable de acero de alta tracción y bandas especiales resistentes al calor, aceites o abrasión. Anchos desde 500 mm hasta más de 3.000 mm.",
+        },
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuánto tarda la instalación de una banda transportadora?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El tiempo de instalación depende del tipo y dimensiones de la banda. Una sustitución estándar se completa en una jornada. Para nuevas líneas o instalaciones complejas, el equipo técnico le facilita un cronograma detallado adaptado a sus turnos de producción.",
+        },
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué garantía ofrecéis en las instalaciones?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Todas nuestras instalaciones incluyen garantía de 2 años sobre el montaje y el empalme. Los materiales suministrados tienen además la garantía del fabricante. Realizamos prueba bajo carga real antes de la entrega definitiva.",
+        },
+      },
+      {
+        "@type": "Question",
+        "name": "¿Hacéis medición técnica previa?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. Antes de suministrar cualquier banda, realizamos visita técnica a sus instalaciones en Andalucía para tomar medidas precisas, analizar el entorno operativo y especificar el material exacto según su carga, velocidad y condiciones ambientales.",
+        },
+      },
+    ],
   };
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />;
 }
@@ -45,6 +97,7 @@ export default function ReplacementService() {
     <div className={styles.pageWrapper}>
       <BreadcrumbJsonLd />
       <ServiceJsonLd />
+      <FAQJsonLd />
 
       {/* Hero Section */}
       <section className={styles.heroSection}>
