@@ -44,6 +44,7 @@ export function Footer() {
             </div>
             <div className={styles.linkColumn}>
               <h4>Recursos</h4>
+              <Link href="/blog">Blog Técnico</Link>
               <Link href="/industrias">Sectores Industriales</Link>
               <Link href="/tipos-cintas-transportadoras">Tipos de Bandas</Link>
               <Link href="/contacto">Solicitar Presupuesto</Link>

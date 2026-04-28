@@ -11,6 +11,12 @@
   <url><loc>https://www.iberband.es/tipos-cintas-transportadoras/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.iberband.es/contacto/</loc><lastmod>2026-03-31</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
 
+  <!-- Blog -->
+  <url><loc>https://www.iberband.es/blog/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://www.iberband.es/blog/senales-averia-banda-transportadora/</loc><lastmod>2026-04-10</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.iberband.es/blog/mantenimiento-preventivo-bandas-transportadoras/</loc><lastmod>2026-04-17</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.iberband.es/blog/vulcanizacion-caliente-vs-empalme-frio/</loc><lastmod>2026-04-24</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+
   <!-- HUBs de ciudad -->
   <url><loc>https://www.iberband.es/bandas-transportadoras/sevilla/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
   <url><loc>https://www.iberband.es/bandas-transportadoras/malaga/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>

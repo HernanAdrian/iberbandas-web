@@ -59,6 +59,7 @@ export function Header() {
           </div>
 
           <Link href="/industrias" className={styles.navLink}>Industrias</Link>
+          <Link href="/blog" className={styles.navLink}>Blog</Link>
           <Link href="/contacto" className={styles.navLink}>Contacto</Link>
         </nav>
 
@@ -115,6 +116,7 @@ export function Header() {
           )}
 
           <Link href="/industrias" className={styles.mobileNavLink} onClick={closeMenu}>Industrias</Link>
+          <Link href="/blog" className={styles.mobileNavLink} onClick={closeMenu}>Blog</Link>
           <Link href="/contacto" className={styles.mobileNavLink} onClick={closeMenu}>Contacto</Link>
 
           <div className={styles.mobileActions}>
