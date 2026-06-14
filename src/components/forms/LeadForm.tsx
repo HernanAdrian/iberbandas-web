@@ -42,6 +42,7 @@ export function LeadForm({
           </label>
         </p>
 
+        {/* Fila 1: Nombre + Teléfono */}
         <div className={styles.formRow}>
           <div className={styles.inputGroup}>
             <label htmlFor={`${formName}-name`} className={styles.label}>Nombre completo *</label>
@@ -67,6 +68,53 @@ export function LeadForm({
           </div>
         </div>
 
+        {/* Fila 2: Empresa + Localización */}
+        <div className={styles.formRow}>
+          <div className={styles.inputGroup}>
+            <label htmlFor={`${formName}-company`} className={styles.label}>Empresa *</label>
+            <input
+              type="text"
+              id={`${formName}-company`}
+              name="company"
+              className={styles.input}
+              placeholder="Ej. Industrias García S.L."
+              required
+            />
+          </div>
+          <div className={styles.inputGroup}>
+            <label htmlFor={`${formName}-location`} className={styles.label}>Localización (provincia / ciudad) *</label>
+            <input
+              type="text"
+              id={`${formName}-location`}
+              name="location"
+              className={styles.input}
+              placeholder="Ej. Málaga, Sevilla..."
+              required
+            />
+          </div>
+        </div>
+
+        {/* Fila 3: Tipo de servicio */}
+        <div className={styles.inputGroup}>
+          <label htmlFor={`${formName}-service`} className={styles.label}>Tipo de servicio *</label>
+          <select
+            id={`${formName}-service`}
+            name="service"
+            className={styles.select}
+            required
+            defaultValue=""
+          >
+            <option value="" disabled>Seleccione el tipo de servicio...</option>
+            <option value="reparacion">Reparación de banda transportadora</option>
+            <option value="mantenimiento">Mantenimiento preventivo</option>
+            <option value="instalacion">Instalación / montaje</option>
+            <option value="urgencia">Urgencia / avería crítica</option>
+            <option value="presupuesto">Solicitud de presupuesto</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+
+        {/* Fila 4: Descripción */}
         <div className={styles.inputGroup}>
           <label htmlFor={`${formName}-description`} className={styles.label}>¿Qué necesita? *</label>
           <textarea
